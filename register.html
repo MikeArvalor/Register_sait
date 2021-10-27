@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+<head>
+<title>Register</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+</head>
+<body>
+    <header>
+        <div class="header_block">
+            <div class="header_log">
+                <img src="img/logo.png">
+            </div>
+            <div class="header_list">
+                <ul class="list_of_links">
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                        <a class="dropbtn">Service 
+                          <i class="fa fa-caret-down"></i>
+                        </a>
+                        
+                        <div class="dropdown-content">
+                          <a href="#">Service 1</a>
+                          <a href="#">Service 2</a>
+                          <a href="#">Service 3</a>
+                        </div>
+                      </div> </li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <section>
+        <div class="register_company">
+            <div class="conatiner">
+                <div class="wrap_register_block">
+                    <div class="left_block">
+                            <div class="register_company_block" >
+                                <div class="header_title">
+                                    Register your company
+                                </div>
+                                <div class="register_block">
+                                    <p>Use this service to register your company with Companies House. You will be registered for Corporation Tax at the same time.</p>
+                                    <p>You’ll get a ‘certificate of incorporation’. This confirms the company legally exists and shows the company number and date of formation.</p>
+                                    <p>You’ll need at least 3 pieces of personal information about yourself and your shareholders or guarantors, for example:</p>
+                                    <ul class="list_block1">
+                                        <li>town of birth</li>
+                                        <li>mother’s maiden name</li>
+                                        <li>father’s first name</li>
+                                        <li>telephone number</li>
+                                        <li>national insurance number</li>
+                                        <li>passport number</li>
+                                    </ul>
+                                    <p>It costs £12 and can be paid by debit or credit card or Paypal account. Your company is usually registered within 24 hours.</p>
+                                    <div class="block_info"><p class="text_info">If you do not want to use ‘limited’ in your company name you must register by post.</p></div>
+                                    <p>You can also use this service to:</p>
+                                    <ul class="list_block2">
+                                        <li>register for PAYE to tell HMRC you’re employing staff (including yourself if you’re the only director)</li>
+                                        <li>continue an application if you’ve already started registering</li>
+                                    </ul>
+                                    <a href="setting-up-new-limited-company.html" class="button_register">Register now</a>
+                                    <p class="under_button">You’ll need to create a Government Gateway user ID and password for your company when you register it. You cannot use your personal Government Gateway ID.</p>
+                                    <p class="header_title_second">Other ways to register</p>
+                                    <p>You can also register:</p>
+                                    <ul class="list_block3">
+                                        <li>by post</li>
+                                        <li>using an agent</li>
+                                        <li>using third-party software</li>
+                                    </ul>
+                                    <p>You’ll also need to register for Corporation Tax within 3 months of starting to do business.</p>
+                                    <p  class="header_title_third">Register by post</p>
+                                    <p>You can register by post using form IN01.</p>
+                                    <p>Postal applications take 8 to 10 days and cost £40 (paid by cheque made out to ‘Companies House’).</p>
+                                    <p>Send your application to the address on the form.</p>
+                                </div>
+
+                            </div>
+                     </div>
+                     <div class="right_block">
+                         <!-- <div class="registery_company_right">
+                             <hr>
+                             <div class="header_title_right">
+                                Set up a limited company: step by step
+                             </div>
+                         </div> -->
+
+                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <section>
+        <div class="register_block">
+            <div class="register_wrap">
+                <div class="register_director">
+                    <form class="register_form">
+                        <p>Director</p>
+                        <label>First Name</label>
+                        <input type="text" placeholder="First Name">
+                        <label>Midlle Name</label>
+                        <input type="text" placeholder="Middle Name">
+                        <label>Surname</label>
+                        <input type="text" placeholder="Surname">
+                        <label>Date of Birth</label>
+                        <input type="data"  id="calendar" placeholder="" >
+                        <label>Correspondence Address</label>
+                        <input type="email" placeholder="info@kensingtonadvisors.co.uk" >
+                        <label>Home Address</label>
+                        <input type="text" placeholder="Office 4, 219 Kensington High Street, London, W8 6BD">
+                        <label>Telephone</label>
+                        <input type="tel" placeholder="Please include the country code beginning with 00">
+                         <div class="choosee_shareholder">
+                            <legend>How Many Directors:</legend>
+                            <input type="text" class="put_director" placeholder="Put number 1-5">
+                            <input type="button" value="Add" class="add_director">
+                         </div>
+                    </form>
+                    <form class="form_shareholder_individ" id="parent" id="shareholder_individ" >
+                        <div class="block_individ elem">
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name"> 
+                            <label>Middle Name</label>
+                            <input type="text" placeholder="Middle Name">
+                            <label>Surname</label>
+                            <input type="text" placeholder="Surname">
+                            <label>Date of Birth</label>
+                            <input type="data" id="calendars" placeholder="">     
+                        </div>                 
+                    </form>
+                    <form class="form_shareholder_individ1" id="parent1" id="shareholder_individ1" >
+                        <div class="block_individ elem1">
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name"> 
+                            <label>Middle Name</label>
+                            <input type="text" placeholder="Middle Name">
+                            <label>Surname</label>
+                            <input type="text" placeholder="Surname">
+                            <label>Date of Birth</label>
+                            <input type="data" id="calendars" placeholder="">     
+                        </div>                 
+                    </form>
+
+                </div>
+                <div class="register_shareholder">
+                    <form class="form_register_shareholder">
+                            <legend>Choosee type of shareholder:</legend>
+                            <div class="radio_block">
+                                <div class="radio_label">
+                                    <label>Individual</label>
+                                    <label>Company</label>
+                                </div>
+                                <div class="radio_radio">
+                                <input type="radio" required name="driver" id="showIndivid" >
+                                <input type="radio" required name="driver" id="showCompany">
+                                </div>
+                            </div>
+                    </form>
+                    <form class="form_shareholder_company" id="shareholder_company">
+                        <div class="block_company">
+                        <label>Company Name</label>
+                        <input type="text" placeholder="Company Name">
+                        <label>Company Register Address</label>
+                        <input type="text" placeholder="Company Register Address">
+                        <label>Company Number</label>
+                        <input type="text" placeholder="Company number">
+                        </div>
+                    </form>
+                    <form class="form_shareholder_individ"  id="shareholder_individ" >
+                        <div class="block_individ elem">
+                            <label>First Name</label>
+                            <input type="text" placeholder="First Name"> 
+                            <label>Middle Name</label>
+                            <input type="text" placeholder="Middle Name">
+                            <label>Surname</label>
+                            <input type="text" placeholder="Surname">
+                            <label>Date of Birth</label>
+                            <input type="data" id="calendars" placeholder="">     
+                        </div>                 
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <script src="js/register.js"></script>
+    <script  src="js/index.js"></script>
+</body>
+</html>	

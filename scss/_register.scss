@@ -1,0 +1,459 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.register_director{
+    display: flex;
+   
+    padding-left:20px ;
+   & .register_form{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    margin-top: 20px;
+    border: 1px solid #000;
+    padding: 20px;
+    & p{
+        margin-bottom: 12px;
+        font-size: 20px;
+        border-bottom: 1px solid #000;
+    }
+    & label{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    & input{
+        margin-bottom: 12px;
+        height: 30px;
+        width: 400px;
+        font-size: 16px;
+    }
+    & .choosee_shareholder{
+        width: 400px;
+        & legend{
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+        & input{
+            width: 100px;
+            margin-bottom: 0px;
+            height: auto;
+        }
+        & label{
+            width: 100px;
+        margin-bottom: 0px;
+        height: auto;
+        }
+       
+    }
+}
+& .form_shareholder_individ{
+   display: none;
+    & .block_individ{
+        display: flex;
+        flex-direction: column;
+    }
+    & label{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    & input{
+        margin-bottom: 12px;
+        height: 30px;
+        width: 400px;
+        font-size: 16px;
+    }
+}
+& .form_shareholder_individ1{
+    display: none;
+     & .block_individ1{
+         display: flex;
+         flex-direction: column;
+     }
+     & label{
+         font-size: 18px;
+         margin-bottom: 12px;
+     }
+     & input{
+         margin-bottom: 12px;
+         height: 30px;
+         width: 400px;
+         font-size: 16px;
+     }
+ }
+& .form_shareholder_company{
+    display: none;
+     & .block_company{
+         display: flex;
+         flex-direction: column;
+     }
+     & label{
+         font-size: 18px;
+         margin-bottom: 12px;
+     }
+     & input{
+         margin-bottom: 12px;
+         height: 30px;
+         width: 400px;
+         font-size: 16px;
+     }
+ }
+
+}
+
+.register_shareholder{
+    display: flex;
+    padding-left:20px ;
+    & .form_shareholder_individ{
+        display: none;
+         & .block_individ{
+             display: flex;
+             flex-direction: column;
+         }
+         & label{
+             font-size: 18px;
+             margin-bottom: 12px;
+         }
+         & input{
+             margin-bottom: 12px;
+             height: 30px;
+             width: 400px;
+             font-size: 16px;
+         }
+     }
+     & .form_shareholder_company{
+        display: none;
+         & .block_company{
+             display: flex;
+             flex-direction: column;
+         }
+         & label{
+             font-size: 18px;
+             margin-bottom: 12px;
+         }
+         & input{
+             margin-bottom: 12px;
+             height: 30px;
+             width: 400px;
+             font-size: 16px;
+         }
+     }
+    & .form_register_shareholder{
+     display: flex;
+     width: 406px;
+     flex-direction: column;
+     margin-right: 50px;
+     margin-top: 20px;
+     border: 1px solid #000;
+     padding: 20px;
+     & legend{
+         border-bottom: 1px solid #000;
+         font-size: 20px;
+         margin-bottom: 24px;
+     }
+     & .radio_block{
+        display: grid;
+        grid-template-columns: 70px 70px;
+         & .radio_label{
+             
+             display: flex;
+             flex-direction: column;
+            
+             
+             & label{
+                 margin-bottom: 12px;
+                 font-size: 18px;
+                 
+             }
+         }
+         & .radio_radio{
+             display: flex;
+             flex-direction: column;
+             margin-left: 20px;
+             margin-top:2px;
+             & input{
+                 margin-bottom: 26px;
+             }
+            
+         }
+     }
+    }
+
+}
+.register_company{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    margin: 0 auto;
+    width: 910px;
+   
+        
+    & .register_company_block{
+       & .header_title{
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 12px;
+        margin-bottom: 36px;
+        justify-content: left;
+        text-align: left;   
+       }
+       & p{
+           font-size: 18px;
+           margin-bottom: 24px;
+           font-weight: 400;
+       }
+       & .list_block1{
+           margin-bottom: 24px;
+           margin-top: 24px;
+           & li{
+               margin-bottom: 12px;
+               list-style-type: disc;
+               margin-left:15px;
+               font-size: 18px;
+           }
+       }
+       & .block_info{
+           border-left: 5px solid #000;
+           height: 50px;
+           justify-content: center;
+           align-self: center;
+           align-items: center;
+           margin-bottom: 24px;
+         
+           & .text_info{
+               font-size: 18px;
+               padding-top: 15px;
+               padding-left: 12px;
+           }
+       }
+       & .list_block2{
+           margin-bottom: 24px;
+           & li{
+               margin-left: 15px;
+               font-size: 18px;
+               margin-bottom: 12px;
+               list-style-type: disc;
+           }
+       }
+       & .under_button{
+           margin-top: 30px;
+       }
+       & .button_register{
+           width: 193px;
+           font-size: 20px;
+           padding: 15px;
+           color: #fff;
+           border: none;
+           text-decoration: none;
+           background: linear-gradient(180deg, #A23228 0%, #942A21 100%);
+           box-shadow: 3px 3px 0px #761D15;
+           margin-bottom: 24px;
+       }
+       & .button_register:hover{
+           box-shadow: none;
+           cursor: pointer;
+           background: #761D15;
+       }
+       & .header_title_second{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 24px;
+        margin-top: 24px;
+       }
+       & .list_block3{
+           margin-bottom: 24px;
+           & li{
+            margin-left: 15px;
+            font-size: 18px;
+            margin-bottom: 12px;
+            list-style-type: disc;
+            border-bottom: 1px solid #761D15;
+            width: fit-content;
+           }
+       }
+       & .header_title_third{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 24px;
+        margin-top: 24px;
+       }
+    }
+
+}
+.wrap_register_block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.register_company_quest{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 910px;
+    & .wrap_register_company{
+        & .register_button_question{
+            width: 183px;
+            padding: 15px;
+            text-align: center;
+            background: linear-gradient(180deg, #A23228 0%, #942A21 100%);
+           box-shadow: 3px 3px 0px #761D15;
+           & a{
+               color: #fff;
+               font-size: 24px;
+              margin: 0 auto;
+               text-decoration: none;
+           }
+        }
+        & .register_button_question:hover{
+            box-shadow: none;
+            background: #761D15;
+            cursor: pointer;
+        }
+        & .navigate_header{
+            margin-top: 60px;
+            margin-bottom: 40px;
+           & a{
+               text-decoration: none;
+               list-style-type:armenian;
+               color: #000;
+               font-size: 24px;
+               border-bottom: 1px solid #000;
+           }
+
+        }
+        & .question_block_registr{
+            & .title_text{
+                font-size: 30px;
+                font-weight:bold;
+                margin-bottom: 36px;
+            }
+            & .change_quest_reg{
+                display: flex;
+                flex-direction:column;
+                & .radio_question{
+                    display: flex;
+                  
+                    margin-right: 40px;
+                    & .radio_btn_quest{
+                        display: flex;
+                      
+                    }
+
+                   &  .custom-radio {
+                        z-index: -1;
+                        opacity: 0;
+                        display: none;
+                      }
+                      & .custom-radio+label {
+                        display: inline-flex;
+                        line-height: 40px;
+                        user-select: none;
+                      }
+                      & .custom-radio+label::before {
+                        content: '';
+                     
+                        margin-bottom: 36px;
+                        width: 40px;
+                        height: 40px;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+                        border: 1px solid #adb5bd;
+                        border-radius: 50%;
+                        margin-right: 20px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 80% 80%;
+                      }
+                      & .label{
+                          font-size: 24px;
+                        
+                      }
+                    & .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+                        border-color: #b3d7ff;
+                      }
+                      & .custom-radio:not(:disabled):active+label::before {
+                        background-color: #b3d7ff;
+                        border-color: #b3d7ff;
+                      }
+                      & .custom-radio:focus+label::before {
+                        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                      }
+                      & .custom-radio:focus:not(:checked)+label::before {
+                        border-color: #80bdff;
+                      }
+                     &  .custom-radio:checked+label::before {
+                        border-color: #0b76ef;
+                        background-color: #0b76ef;
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+                      }
+                      & .custom-radio:disabled+label::before {
+                        background-color: #e9ecef;
+                      }
+                     
+                   
+                }
+                & .text_radio{
+                    display: flex;
+                   
+                    margin-top: 5px;
+                    & p{
+                        margin-bottom: 52px;
+                        font-size: 22px;
+                    }
+                    &  .custom-radio {
+                        z-index: -1;
+                        opacity: 0;
+                        display: none;
+                      }
+                      & .custom-radio+label {
+                        display: inline-flex;
+                        line-height: 40px;
+                        user-select: none;
+                      }
+                      & .label{
+                          font-size: 24px;
+                      }
+                      & .custom-radio+label::before {
+                        content: '';
+                       
+                        margin-bottom: 36px;
+                        width: 40px;
+                        height: 40px;
+                        flex-shrink: 0;
+                        flex-grow: 0;
+                        border: 1px solid #adb5bd;
+                        border-radius: 50%;
+                        margin-right: 20px;
+                        background-repeat: no-repeat;
+                        background-position: center center;
+                        background-size: 50% 50%;
+                      }
+                    & .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+                        border-color: #b3d7ff;
+                      }
+                      & .custom-radio:not(:disabled):active+label::before {
+                        background-color: #b3d7ff;
+                        border-color: #b3d7ff;
+                      }
+                      & .custom-radio:focus+label::before {
+                        box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+                      }
+                      & .custom-radio:focus:not(:checked)+label::before {
+                        border-color: #80bdff;
+                      }
+                     &  .custom-radio:checked+label::before {
+                        border-color: #0b76ef;
+                        background-color: #0b76ef;
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+                      }
+                      & .custom-radio:disabled+label::before {
+                        background-color: #e9ecef;
+                      }
+                     
+                }
+        }
+
+        }
+    }
+}

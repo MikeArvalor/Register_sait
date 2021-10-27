@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en"> 
+<head>
+<title>Register</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/index.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <script>
+        $(document).ready(function() {
+            $('.form_sub').click(function(){
+                $.ajax({
+                    type: "POST", 
+                    url:"form.php", 
+                    data:$('.form_modal_window').serialize(), 
+                    error:function(){$("#erconts").html("Произошла ошибка!");},
+                    beforeSend: function() {
+                        $("#erconts").html("<p>Отправляем данные...</p>");
+                    },
+                    success: function(result){
+                        $('#erconts').html(result);
+                        checkThis();
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="header_block">
+            <div class="header_log">
+                <img src="img/logo.png">
+            </div>
+            <div class="header_list">
+                <ul class="list_of_links">
+                    <li><a href="#">Home</a></li>
+                    <li>
+                        <div class="dropdown">
+                        <a class="dropbtn">Service 
+                          <i class="fa fa-caret-down"></i>
+                        </a>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div> </li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </header>
+    <section>
+        <div class="first_block">
+            <div class="left_info">
+                <p class="first_text">Adress Services</p>
+                <p class="second_text">Registered Office Address Service London</p>
+                <button class="button_reg page-wrapper btn trigger">Click to fill</button>
+               
+                  
+            </div>
+            <div class="right_info">
+                <div class="card_right">
+                 
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <div class="modal-wrapper">
+        <div class="head"></div>
+        <div class="modal">
+          <div class="content">
+              <div class="good-job">
+                <p style="padding: 20px 0 0;color: gray;margin: 0;font-size: 14px;">
+                    Form to fill</p>
+                <div class="text">
+
+                </div>
+                <form class="form_modal_window" method="POST" action="">
+                    <label>Put your name:</label>
+                  <input type="text" name="name" placeholder="Ваше имя" required>
+                  <label>Put your email:</label>
+                  <input type="email" name="email" placeholder="Ваш email" required>
+                  <label>Put your phone:</label>
+                  <input type="phone" name="phone" placeholder="Ваш телефон" required>
+                  <label>Put your name:</label>
+                  <input type="text" name="name" placeholder="Ваше имя" required>
+                  <label>Put your name:</label>
+                  <input type="text" name="name" placeholder="Ваше имя" required>
+                  <input class="form_sub" name="sub" type="submit" value="ОТПРАВИТЬ">
+                </form>
+                <div id="erconts"></div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <script  src="js/index.js"></script>
+   
+</body>
+</html>	
