@@ -242,6 +242,19 @@
   grid-column-gap: 20px;
 }
 
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 200px 200px;
+      grid-template-columns: 200px 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 22px;
+}
 
 .circle {
   border: 5px solid #b38022;
@@ -269,6 +282,10 @@
   transition: 1s;
 }
 
+.card i:hover {
+  -webkit-transform: perspective(300px) rotateZ(360deg);
+          transform: perspective(300px) rotateZ(360deg);
+}
 
 .text1_in_card {
   font-size: 22px;
