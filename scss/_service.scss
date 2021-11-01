@@ -6,14 +6,14 @@
 
 }
 
-.header_block{
-    display: grid;
-    grid-template-columns: 500px 616px;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    background: #3e3e3e;
-}
+// .header_block{
+//     display: grid;
+//     grid-template-columns: 500px 616px;
+//     align-items: center;
+//     justify-content: center;
+//     top: 0;
+//     background: #3e3e3e;
+// }
 .header_log img{
     width: 250px;
     height: 100px;
@@ -71,14 +71,7 @@
     display: block;
 }
 
-.footer_block{
-  background: #3e3e3e;
-  display: grid;
-  grid-template-columns: 250px 500px 300px;
-padding: 40px;
-  line-height: 40px;
-  font-size: 20px;  color: #aca9a9;
-}
+
 .list_links p{
  font-weight: bold;
   font-size: 22px;
@@ -105,9 +98,8 @@ padding: 40px;
 .service_block{
     justify-content: center;
     align-self: center;
-    margin: 0 auto;
-    width: 90%;
-    padding: 30px;
+ 
+    padding: 15px;
     border: 2px solid #3e3e3e;
     border-radius: 45px;
 }
@@ -138,11 +130,11 @@ padding: 40px;
     margin-top: 20px;
 }
 .add_block,.add_block1,.add_block2,.add_block3,.add_block4,.add_block5,.add_block6,.add_block7,.add_block8{
-    display: grid;
-    grid-template-columns: 350px 80px 100px 140px;
-    justify-content: center;
-    align-items: baseline;
-    margin-left: -145px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: baseline;
+    
 }
 .txt3{
     font-size: 20px;margin-top: 20px;
@@ -242,10 +234,10 @@ padding: 40px;
     visibility: visible;
   }
   .form_of_pay{
-    height: 560px;
+
     border: 1px solid #3e3e3e;
     margin: 0 auto;
-    width: 400px;
+   
   }
   .title_form_of_pay{
     padding: 20px;
@@ -294,7 +286,9 @@ padding: 40px;
   }
   .dividing_block{
   display: grid;
-    grid-template-columns: 820px 400px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  grid-column-gap: 15px;
 
   }
   .hr{

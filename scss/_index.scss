@@ -4,20 +4,24 @@
     list-style-type: none;
 
 }
-
-.header_block{
-    display: grid;
-    grid-template-columns: 500px 616px;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    background: #3e3e3e;
+.header{
+  background: #3e3e3e;
 }
+.container{
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .header_log img{
     width: 250px;
     height: 100px;
 }
-
+.header_block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .list_of_links li{
     display: inline-flex;
     padding-left: 70px;
@@ -96,7 +100,7 @@
 	position: relative;
 	padding:0;
 }
-.padding_slide1 {padding:170px 0 60px 0;
+.padding_slide1 {padding:170px 0 80px 0;
 }
 #slide1{
 	background-color:#ffffff;
@@ -167,7 +171,9 @@
 }
 .block_of_service{
   display: block;
-  padding: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 }
 .text_card1{
   font-size: 46px;
@@ -187,12 +193,12 @@
 .service_card{
   padding-top: 40px;
   display: grid;
-  grid-template-columns: 350px 400px 380px;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 20px;
 }
 .card{
   display: grid;
-  grid-template-columns: 200px 200px;
+  grid-template-columns: 1fr 1fr;
   justify-content: center;
   align-items: center;
   line-height: 22px;
@@ -217,8 +223,6 @@
 .card i:hover{
   transform: perspective(300px) rotateZ(360deg);
 }
-
-
 .text1_in_card{
   font-size: 22px;
 
@@ -234,14 +238,7 @@
   margin: 20px 0 20px 0;
   width: 90%;
 }
-.footer_block{
-  background: #3e3e3e;
-  display: grid;
-  grid-template-columns: 250px 500px 300px;
-padding: 40px;
-  line-height: 40px;
-  font-size: 20px;  color: #aca9a9;
-}
+
 .list_links p{
  font-weight: bold;
   font-size: 22px;
@@ -259,4 +256,19 @@ padding: 40px;
 }
 .list_contact i{
   color: rgb(179, 128, 34);
+}
+.footer{
+  background: #3e3e3e;
+}
+.footer_block{padding-top: 20px;
+  line-height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  font-size: 18px;  color: #aca9a9;
+
+} 
+.footer_contact_block{
+  margin-left: 40px;
 }

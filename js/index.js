@@ -91,18 +91,27 @@ let inner_block2 = document.querySelector('#inner')
 function fn2(e){
  
   let add_block2=e.target.parentNode
-   let text2 =add_block2.querySelector('.txt7')
-   let price2 =add_block2.querySelector('.txt8')
+   let text =add_block2.querySelector('.txt7')
+   let price =add_block2.querySelector('.txt8')
    
    let div =document.createElement('div')
    let button_remove2 =document.createElement('input')
        button_remove2.type='button'
        button_remove2.addEventListener('click',rem)
+       button_remove2.addEventListener('click',s)
        button_remove2.value='-'
+       button_remove2.style.width='20px'
+       button_remove2.style.background='rgb(179, 128, 34)'
+       button_remove2.style.border='none'
+       button_remove2.style.marginLeft='20px'
+       button_remove2.style.marginRight="10px"
+       button_remove2.style.borderRadius="20px"
+       button_remove2.style.padding="2px"
        
-   div.innerHTML=`${text2.innerHTML}${price2.innerHTML}`
-   div.append(button_remove2)
-   inner_block2.append(div)
+       div.append(`${text.innerHTML}`)
+       div.append(button_remove2)
+       div.append(`${price.innerHTML}`)
+       inner_block2.append(div)
 
 }
 
@@ -116,18 +125,27 @@ let inner_block3 = document.querySelector('#inner')
 function fn3(e){
  
   let add_block3=e.target.parentNode
-   let text3 =add_block3.querySelector('.txt9')
-   let price3 =add_block3.querySelector('.txt10')
+   let text =add_block3.querySelector('.txt9')
+   let price =add_block3.querySelector('.txt10')
    
    let div =document.createElement('div')
    let button_remove3 =document.createElement('input')
        button_remove3.type='button'
        button_remove3.addEventListener('click',rem)
+       button_remove3.addEventListener('click',s)
        button_remove3.value='-'
+       button_remove3.style.width='20px'
+       button_remove3.style.background='rgb(179, 128, 34)'
+       button_remove3.style.border='none'
+       button_remove3.style.marginLeft='20px'
+       button_remove3.style.marginRight="10px"
+       button_remove3.style.borderRadius="20px"
+       button_remove3.style.padding="2px"
        
-   div.innerHTML=`${text3.innerHTML}${price3.innerHTML}`
-   div.append(button_remove3)
-   inner_block3.append(div)
+       div.append(`${text.innerHTML}`)
+       div.append(button_remove3)
+       div.append(`${price.innerHTML}`)
+       inner_block3.append(div)
 
 }
 
@@ -141,18 +159,27 @@ let inner_block4 = document.querySelector('#inner')
 function fn4(e){
  
   let add_block4=e.target.parentNode
-   let text4 =add_block4.querySelector('.txt11')
-   let price4 =add_block4.querySelector('.txt12')
+   let text =add_block4.querySelector('.txt11')
+   let price =add_block4.querySelector('.txt12')
    
    let div =document.createElement('div')
    let button_remove4 =document.createElement('input')
        button_remove4.type='button'
        button_remove4.addEventListener('click',rem)
+       button_remove4.addEventListener('click',s)
        button_remove4.value='-'
+       button_remove4.style.width='20px'
+       button_remove4.style.background='rgb(179, 128, 34)'
+       button_remove4.style.border='none'
+       button_remove4.style.marginLeft='20px'
+       button_remove4.style.marginRight="10px"
+       button_remove4.style.borderRadius="20px"
+       button_remove4.style.padding="2px"
        
-   div.innerHTML=`${text4.innerHTML}${price4.innerHTML}`
-   div.append(button_remove4)
-   inner_block4.append(div)
+       div.append(`${text.innerHTML}`)
+       div.append(button_remove4)
+       div.append(`${price.innerHTML}`)
+       inner_block4.append(div)
 
 }
 
@@ -166,19 +193,27 @@ let inner_block5 = document.querySelector('#inner')
 function fn5(e){
  
   let add_block5=e.target.parentNode
-   let text5 =add_block5.querySelector('.txt13')
-   let price5 =add_block5.querySelector('.txt14')
+   let text =add_block5.querySelector('.txt13')
+   let price =add_block5.querySelector('.txt14')
    
    let div =document.createElement('div')
    let button_remove5 =document.createElement('input')
        button_remove5.type='button'
        button_remove5.addEventListener('click',rem)
+       button_remove5.addEventListener('click',s)
        button_remove5.value='-'
+       button_remove5.style.width='20px'
+       button_remove5.style.background='rgb(179, 128, 34)'
+       button_remove5.style.border='none'
+       button_remove5.style.marginLeft='20px'
+       button_remove5.style.marginRight="10px"
+       button_remove5.style.borderRadius="20px"
+       button_remove5.style.padding="2px"
        
-   div.innerHTML=`${text5.innerHTML}${price5.innerHTML}`
-   div.append(button_remove5)
-   inner_block5.append(div)
-
+       div.append(`${text.innerHTML}`)
+       div.append(button_remove5)
+       div.append(`${price.innerHTML}`)
+       inner_block5.append(div)
 }
 
 function rem(e){
@@ -191,18 +226,27 @@ let inner_block6 = document.querySelector('#inner')
 function fn6(e){
  
   let add_block6=e.target.parentNode
-   let text6 =add_block6.querySelector('.txt15')
-   let price6 =add_block6.querySelector('.txt16')
+   let text =add_block6.querySelector('.txt15')
+   let price =add_block6.querySelector('.txt16')
    
    let div =document.createElement('div')
    let button_remove6 =document.createElement('input')
        button_remove6.type='button'
        button_remove6.addEventListener('click',rem)
+       button_remove6.addEventListener('click',s)
        button_remove6.value='-'
+       button_remove6.style.width='20px'
+       button_remove6.style.background='rgb(179, 128, 34)'
+       button_remove6.style.border='none'
+       button_remove6.style.marginLeft='20px'
+       button_remove6.style.marginRight="10px"
+       button_remove6.style.borderRadius="20px"
+       button_remove6.style.padding="2px"
        
-   div.innerHTML=`${text6.innerHTML}${price6.innerHTML}`
-   div.append(button_remove6)
-   inner_block6.append(div)
+       div.append(`${text.innerHTML}`)
+       div.append(button_remove6)
+       div.append(`${price.innerHTML}`)
+       inner_block6.append(div)
 
 }
 
@@ -216,18 +260,27 @@ let inner_block7 = document.querySelector('#inner')
 function fn7(e){
  
   let add_block7=e.target.parentNode
-   let text7 =add_block7.querySelector('.txt17')
-   let price7 =add_block7.querySelector('.txt18')
+   let text =add_block7.querySelector('.txt17')
+   let price =add_block7.querySelector('.txt18')
    
    let div =document.createElement('div')
    let button_remove7 =document.createElement('input')
        button_remove7.type='button'
        button_remove7.addEventListener('click',rem)
+       button_remove7.addEventListener('click',s)
        button_remove7.value='-'
+       button_remove7.style.width='20px'
+       button_remove7.style.background='rgb(179, 128, 34)'
+       button_remove7.style.border='none'
+       button_remove7.style.marginLeft='20px'
+       button_remove7.style.marginRight="10px"
+       button_remove7.style.borderRadius="20px"
+       button_remove7.style.padding="2px"
        
-   div.innerHTML=`${text7.innerHTML}${price7.innerHTML}`
-   div.append(button_remove7)
-   inner_block7.append(div)
+       div.append(`${text.innerHTML}`)
+       div.append(button_remove7)
+       div.append(`${price.innerHTML}`)
+       inner_block7.append(div)
 
 }
 
@@ -241,18 +294,27 @@ let inner_block8 = document.querySelector('#inner')
 function fn8(e){
  
   let add_block8=e.target.parentNode
-   let text8 =add_block8.querySelector('.txt19')
-   let price8 =add_block8.querySelector('.txt20')
+   let text =add_block8.querySelector('.txt19')
+   let price =add_block8.querySelector('.txt20')
    
    let div =document.createElement('div')
    let button_remove8 =document.createElement('input')
        button_remove8.type='button'
        button_remove8.addEventListener('click',rem)
+       button_remove8.addEventListener('click',s)
        button_remove8.value='-'
+       button_remove8.style.width='20px'
+       button_remove8.style.background='rgb(179, 128, 34)'
+       button_remove8.style.border='none'
+       button_remove8.style.marginLeft='20px'
+       button_remove8.style.marginRight="10px"
+       button_remove8.style.borderRadius="20px"
+       button_remove8.style.padding="2px"
        
-   div.innerHTML=`${text8.innerHTML}${price8.innerHTML}`
-   div.append(button_remove8)
-   inner_block8.append(div)
+       div.append(`${text.innerHTML}`)
+       div.append(button_remove8)
+       div.append(`${price.innerHTML}`)
+       inner_block8.append(div)
 
 }
 
