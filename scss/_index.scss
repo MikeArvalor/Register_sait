@@ -99,6 +99,7 @@
 	height:auto;
 	position: relative;
 	padding:0;
+  margin-bottom: 50px;
 }
 .padding_slide1 {padding:170px 0 80px 0;
 }
@@ -169,94 +170,6 @@
   background: none;
   border:5px solid #3e3e3e ;
 }
-.block_of_service{
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-}
-.text_card1{
-  font-size: 46px;
-  text-transform: uppercase;
-  font-weight: bold;
-  
-}
-.header_hr{
-  width: 140px;
-  margin: 20px 0 20px 0;
-}
-.text_card2{
-  font-size: 24px;
-  width: 100%;
- 
-}
-.service_card{
-  padding-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 20px;
-}
-.card{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
-  align-items: center;
-  line-height: 22px;
-}
-.circle{
-  border: 5px solid rgb(179, 128, 34);
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding: 35px;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background: #3e3e3e;
-  transition: 2s;
-}
-.card i{
-  font-size: 40px;
-  color: rgb(179, 128, 34);
-  transition: 1s;
-}
-.card i:hover{
-  transform: perspective(300px) rotateZ(360deg);
-}
-.text1_in_card{
-  font-size: 22px;
-
-}
-.text1_in_card:hover{
-  color: rgb(179, 128, 34);
-}
-.text2_in_card{
-  font-size: 14px;
-  font-family: none;
-}
-.card hr{
-  margin: 20px 0 20px 0;
-  width: 90%;
-}
-
-.list_links p{
- font-weight: bold;
-  font-size: 22px;
-}
-.list_contact p{
-  font-weight: bold;
-  font-size: 22px;
-}
-.list_links a{
-  text-decoration: none;
-  color: #aca9a9;
-}
-.list_links a:hover{
-  color: rgb(179, 128, 34);
-}
-.list_contact i{
-  color: rgb(179, 128, 34);
-}
 .footer{
   background: #3e3e3e;
 }
@@ -271,4 +184,38 @@
 } 
 .footer_contact_block{
   margin-left: 40px;
+}
+.block_of_card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 50px;
+  & .card{
+    margin-bottom: 20px;
+    & .text_of_card{
+      text-align: center;
+      & p{
+        margin-bottom: 10px;
+      }
+    }
+    & .button_card{
+     width: 120px;
+     padding: 5px;
+     border-radius:5%;
+     background: #3e3e3e;
+     color: #ffffff;
+     border: none;
+     & a{
+       text-decoration: none;
+       color: #ffffff;
+     }
+    }
+    & .button_card:hover{
+      background: #aca9a9;
+    box-shadow: 0 3px 5px #3e3e3e;
+    }
+    & img{
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
 }
