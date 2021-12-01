@@ -228,16 +228,13 @@
   background: linear-gradient(#00598a 100%, #00598a 100%);
 }
 
-.footer {
-  background: #3e3e3e;
-}
-
 .footer_block {
   padding-top: 20px;
   line-height: 55px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #727272;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -670,6 +667,9 @@
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.orient_header {
   font-family: Roboto;
 }
 
@@ -880,26 +880,32 @@
 }
 
 .list_links p {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 22px;
+  color: #363738;
 }
 
 .list_contact p {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 22px;
+  color: #363738;
+}
+
+.list_contact li {
+  color: #727272;
 }
 
 .list_links a {
   text-decoration: none;
-  color: #aca9a9;
+  color: #727272;
 }
 
 .list_links a:hover {
-  color: #b38022;
+  color: #017eff;
 }
 
 .list_contact i {
-  color: #b38022;
+  color: #017eff;
 }
 
 .title_block {
