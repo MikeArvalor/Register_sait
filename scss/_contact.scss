@@ -24,9 +24,13 @@
   }
   .title_block{
       font-size: 40px;
+      & p{
+        font-family: Roboto;
+      }
   }
   .contact{
       margin-top: 10px;
+      
   }
   .contact_block{
       display: grid;
@@ -41,17 +45,22 @@
       padding: 10px;
       margin-top: 20px;
       border: 1px solid #aca9a9;
-      background: #ebe7e7;
-      border-left: 2px solid rgb(179, 128, 34);
+     
+      font-family: Roboto;
+      
 
   }
+  
   .text_area{
     border: 1px solid #aca9a9;
-    background: #ebe7e7;
-    border-left: 2px solid rgb(179, 128, 34);
+    
+    font-family: Roboto;
+    padding: 10px;
+    
       margin-top: 20px;
       height: 100px;
-      width: 520px;
+      width: 500px;
+      margin-bottom: 20px;
   }
   .btn{
       padding: 20px;
@@ -75,13 +84,42 @@
       font-size: 24px;
       text-transform: uppercase;
       margin-bottom: 30px;
+      font-family: Roboto;
   }
   .text_right2{
       margin-bottom: 30px;
+      font-family: Roboto;
   }
   .contact_right_block{
       line-height: 35px;
+      & li{
+        font-family: Roboto;
+      }
   }
   .contact_right_block i{
-      color: rgb(179, 128, 34);
+      color: #017eff;
+  }
+  .btn_contact{
+    width: 193px;
+    font-size: 20px;
+    padding: 15px;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+   
+    margin-bottom: 24px;
+    border-radius: 5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background: linear-gradient(180deg,#003b5c 0%,#00598a 100%);
+  
+    & a{
+        color: #ffffff;
+        text-decoration: none;
+        font-family: Roboto;
+    }
+  }
+  .btn_contact:hover{
+    background: linear-gradient(#00598a 100%,#00598a 100%);
+      cursor: pointer;
+      
   }
