@@ -151,7 +151,7 @@
 
 #slide1 {
   background-color: #ffffff;
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/back.jpg);
   background-size: cover !important;
   text-align: center;
   background-position: 0 0 !important;
@@ -228,6 +228,10 @@
   background: linear-gradient(#00598a 100%, #00598a 100%);
 }
 
+.footer {
+  background: rgba(0, 0, 0, 0.03);
+}
+
 .footer_block {
   padding-top: 20px;
   line-height: 55px;
@@ -279,8 +283,10 @@
 }
 
 .service {
-  background: -webkit-gradient(linear, left top, left bottom, from(#003b5c), to(#00598a));
-  background: linear-gradient(180deg, #003b5c 0%, #00598a 100%);
+  background: url(../img/back1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   width: 100%;
   margin-bottom: 50px;
 }
@@ -525,7 +531,8 @@
   border-radius: 5%;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  background: #017eff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#003b5c), to(#00598a));
+  background: linear-gradient(180deg, #003b5c 0%, #00598a 100%);
   color: #ffffff;
   border: none;
 }
