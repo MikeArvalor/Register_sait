@@ -107,7 +107,7 @@ color: #017eff;
 	padding:0;
 
 }
-.padding_slide1 {padding:170px 0 190px 0;
+.padding_slide1 {padding:100px 0 260px 0;
 }
 #slide1{
 	background-color:#ffffff;
@@ -183,16 +183,17 @@ color: #017eff;
 }
 .footer_block{padding-top: 20px;
   line-height: 55px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1fr;
+  grid-column-gap: 35px;
   color: #727272;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row;
   font-size: 18px;  color: #aca9a9;
 
 } 
 .footer_contact_block{
-  margin-left: 40px;
+  
 }
 .service{
   background: #FDFCFB;
@@ -284,8 +285,8 @@ color: #017eff;
           }
         }
         & li:hover{
-          background: #a8ad00;
-        
+          background: linear-gradient(#00598a 100%,#00598a 100%); 
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
         }
       }
     }

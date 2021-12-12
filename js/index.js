@@ -51,17 +51,18 @@ window.onclick = function(event) {
            button_remove.addEventListener('click',s)
            button_remove.addEventListener('click',del)
            button_remove.addEventListener('click',rem_window)
-           button_remove.value='-'
-           button_remove.style.width='20px'
-           button_remove.style.background='rgb(179, 128, 34)'
+           button_remove.value='delete'
+           button_remove.style.width='50px'
+           button_remove.style.background='#00598a'
            button_remove.style.border='none'
            button_remove.style.marginLeft='10px'
            button_remove.style.marginRight="10px"
-           button_remove.style.borderRadius="20px"
-           button_remove.style.padding="2px"
+           button_remove.style.borderRadius="8px"
+           button_remove.style.color='#fff'
+           button_remove.style.height='20px'
        let empty_button = document.createElement('input')
        empty_button.type='button'
-       empty_button.style.width='10px'
+       empty_button.style.width='239px'
        empty_button.style.background='none'
        empty_button.style.border='none'
     //    div.innerHTML=`${text.innerHTML}  ${price.innerHTML}` 
@@ -70,20 +71,29 @@ window.onclick = function(event) {
        div.append(button_remove)
       
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
       //  БЛОК 2
       let div_window =document.createElement('div')
      
    //    div.innerHTML=`${text.innerHTML}  ${price.innerHTML}` 
      /*  div.append(button_remove) */
-      div_window.append(`${text_window.innerHTML}`)  
+      div_window.append( `${text_window.innerHTML}`)  
       div_window.append(empty_button)   
-      div_window.append('£'+`${Number(price_window.innerHTML)}`)
+      div_window.append('£'+ `${Number(price_window.innerHTML)}`)
+      div_window.style.marginBottom='15px'
+      div_window.style.fontFamily='Roboto'
+      div_window.style.fontSize='14px'
+      
       /*
       попытка через input
       */
-     input_block.value = Number(input_block.value) + 10
+     input_block.value = Number(input_block.value) + 65.00
      input_vat_block.value = Number(input_block.value) * 0.2
-     input_total_block.value  = (Number(input_total_block.value) + 10) + (Math.round(Number(input_vat_block.value) * 0.2))
+     input_total_block.value =  (Number(input_total_block.value) +78.00)
      console.log(input_block.value)
     //    div.innerHTML+=`<span>${price.innerHTML}</span>` 
     // total_price = Number(total) + Number(price_new.innerHTML)
@@ -96,6 +106,9 @@ window.onclick = function(event) {
     // console.log(total_price)
        inner_block.append(div)
        inner_block_window.append(div_window)
+       inner_block_window.style.display='grid'
+       inner_block_window.style.marginLeft='35px'
+       inner_block_window.style.marginTop='15px'
       //  inner_block_window.append(div)
       // if(total_price==total_price){
       //   block_total_price.remove(total)
@@ -105,10 +118,16 @@ window.onclick = function(event) {
       // }
    }
  function del(){
-  input_block.value = Number(input_block.value) - 10
-  input_vat_block.value -=Math.round(Number(input_vat_block.value) * 0.2)
-  input_total_block.value =(Number(input_total_block.value) - 10) - (Math.round(Number(input_vat_block.value) * 0.2))
+  input_block.value = Number(input_block.value) - 65
+  input_vat_block.value = input_vat_block.value - 13
+  input_total_block.value =(Number(input_total_block.value) - 78)
  }
+//  function del3(){
+//   input_block.value = Number(input_block.value) - 120
+//   input_vat_block.value = input_vat_block.value - 24
+//   input_total_block.value =(Number(input_total_block.value) - 144)
+// }
+
  function rem_window(){
    inner_block_window.remove()
  }
@@ -145,34 +164,49 @@ function fn1(e){
           button_remove1.addEventListener('click',s)
           button_remove1.addEventListener('click',del1)
           button_remove1.addEventListener('click',rem_window1)
-          button_remove1.value='-'
-          button_remove1.style.width='20px'
-          button_remove1.style.background='rgb(179, 128, 34)'
+          button_remove1.value='delete'
+          button_remove1.style.width='50px'
+          button_remove1.style.background='#00598a'
           button_remove1.style.border='none'
-          button_remove1.style.marginLeft='20px'
+          button_remove1.style.marginLeft='10px'
           button_remove1.style.marginRight="10px"
-          button_remove1.style.borderRadius="20px"
-          button_remove1.style.padding="2px"
+          button_remove1.style.borderRadius="8px"
+          button_remove1.style.color='#fff'
+          button_remove1.style.height='20px'
           let empty_button1 = document.createElement('input')
           empty_button1.type='button'
-          empty_button1.style.width='10px'
+          empty_button1.style.width='223px'
           empty_button1.style.background='none'
           empty_button1.style.border='none'
       div.append(`${text.innerHTML}`)
       div.append(button_remove1)
       div.append('£'+`${price.innerHTML}`)
+      div.style.fontFamily='Roboto'
+      div.style.fontSize='14px'
+      div.style.marginTop='15px'
+      div.style.display='grid'
+      div.style.gridTemplateColumns='210px 85px 35px'
         // блок 2
         let div_window1 =document.createElement('div')
         div_window1.append(`${text_window.innerHTML}`) 
         div_window1.append(empty_button1)    
         div_window1.append('£'+`${Number(price_window.innerHTML)}`)
+        div_window1.style.marginBottom='15px'
+        div_window1.style.fontFamily='Roboto'
+        div_window1.style.fontSize='14px'
         inner_block_window1.append(div_window1)
       inner_block.append(div)
-      input_block.value = Number(input_block.value) + 0
+      input_block.value = Number(input_block.value) + 150
+      input_vat_block.value = Number(input_block.value) * 0.2
+      input_total_block.value =(Number(input_total_block.value) +180)
+     
+       inner_block_window1.style.marginTop='15px'
     
   }
   function del1(){
-    input_block.value = Number(input_block.value) - 0
+    input_block.value = Number(input_block.value) - 150
+  input_vat_block.value = input_vat_block.value - 30
+  input_total_block.value =(Number(input_total_block.value) - 180)
     
   }
   function rem_window1(){
@@ -206,32 +240,43 @@ function fn2(e){
        button_remove2.addEventListener('click',s)
        button_remove2.addEventListener('click',del2)
        button_remove2.addEventListener('click',rem_window2)
-       button_remove2.value='-'
-       button_remove2.style.width='20px'
-       button_remove2.style.background='rgb(179, 128, 34)'
+       button_remove2.value='delete'
+       button_remove2.style.width='50px'
+       button_remove2.style.background='#00598a'
        button_remove2.style.border='none'
-       button_remove2.style.marginLeft='20px'
+       button_remove2.style.marginLeft='10px'
        button_remove2.style.marginRight="10px"
-       button_remove2.style.borderRadius="20px"
-       button_remove2.style.padding="2px"
+       button_remove2.style.borderRadius="8px"
+       button_remove2.style.color='#fff'
+       button_remove2.style.height='20px'
        let empty_button2 = document.createElement('input')
        empty_button2.type='button'
-       empty_button2.style.width='10px'
+       empty_button2.style.width='168px'
        empty_button2.style.background='none'
        empty_button2.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove2)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
         // блок 2
         let div_window2 =document.createElement('div')
         div_window2.append(`${text_window.innerHTML}`)  
         div_window2.append(empty_button2)   
         div_window2.append('£'+`${Number(price_window.innerHTML)}`)
+        div_window2.style.marginBottom='15px'
+        div_window2.style.fontFamily='Roboto'
+        div_window2.style.fontSize='14px'
         inner_block_window2.append(div_window2)
        inner_block2.append(div)
        input_block.value = Number(input_block.value) + 60
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +72) 
+       
+       inner_block_window2.style.marginTop='15px'
        console.log(input_vat_block.value)
 
 }
@@ -266,32 +311,44 @@ function fn3(e){
        button_remove3.addEventListener('click',s)
        button_remove3.addEventListener('click',del3)
        button_remove3.addEventListener('click',rem_window3)
-       button_remove3.value='-'
-       button_remove3.style.width='20px'
-       button_remove3.style.background='rgb(179, 128, 34)'
+       button_remove3.value='delete'
+       button_remove3.style.width='50px'
+       button_remove3.style.background='#00598a'
        button_remove3.style.border='none'
-       button_remove3.style.marginLeft='20px'
+       button_remove3.style.marginLeft='10px'
        button_remove3.style.marginRight="10px"
-       button_remove3.style.borderRadius="20px"
-       button_remove3.style.padding="2px"
+       button_remove3.style.borderRadius="8px"
+       button_remove3.style.color='#fff'
+       button_remove3.style.height='20px'
        let empty_button3 = document.createElement('input')
        empty_button3.type='button'
-       empty_button3.style.width='10px'
+       empty_button3.style.width='160px'
        empty_button3.style.background='none'
        empty_button3.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove3)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
+       
         // блок 2
         let div_window3 =document.createElement('div')
         div_window3.append(`${text_window.innerHTML}`)  
         div_window3.append(empty_button3)  
         div_window3.append('£'+`${Number(price_window.innerHTML)}`)
+        div_window3.style.marginBottom='15px'
+        div_window3.style.fontFamily='Roboto'
+        div_window3.style.fontSize='14px'
         inner_block_window3.append(div_window3)
        inner_block3.append(div)
        input_block.value = Number(input_block.value) + 120
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +144)
+      
+       inner_block_window3.style.marginTop='15px'
 
 }
 function del3(){
@@ -326,32 +383,43 @@ function fn4(e){
        button_remove4.addEventListener('click',s)
        button_remove4.addEventListener('click',del4)
        button_remove4.addEventListener('click',rem_window4)
-       button_remove4.value='-'
-       button_remove4.style.width='20px'
-       button_remove4.style.background='rgb(179, 128, 34)'
+       button_remove4.value='delete'
+       button_remove4.style.width='50px'
+       button_remove4.style.background='#00598a'
        button_remove4.style.border='none'
-       button_remove4.style.marginLeft='20px'
+       button_remove4.style.marginLeft='10px'
        button_remove4.style.marginRight="10px"
-       button_remove4.style.borderRadius="20px"
-       button_remove4.style.padding="2px"
+       button_remove4.style.borderRadius="8px"
+       button_remove4.style.color='#fff'
+       button_remove4.style.height='20px'
        let empty_button4 = document.createElement('input')
        empty_button4.type='button'
-       empty_button4.style.width='10px'
+       empty_button4.style.width='265px'
        empty_button4.style.background='none'
        empty_button4.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove4)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
           // блок 2
           let div_window4 =document.createElement('div')
           div_window4.append(`${text_window.innerHTML}`) 
           div_window4.append(empty_button4)    
           div_window4.append('£'+`${Number(price_window.innerHTML)}`)
+          div_window4.style.marginBottom='15px'
+          div_window4.style.fontFamily='Roboto'
+          div_window4.style.fontSize='14px'
           inner_block_window4.append(div_window4)
        inner_block4.append(div)
        input_block.value = Number(input_block.value) + 75
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +90)
+      
+       inner_block_window4.style.marginTop='15px'
 
 }
 function del4(){
@@ -385,32 +453,43 @@ function fn5(e){
        button_remove5.addEventListener('click',s)
        button_remove5.addEventListener('click',del5)
        button_remove5.addEventListener('click',rem_window5)
-       button_remove5.value='-'
-       button_remove5.style.width='20px'
-       button_remove5.style.background='rgb(179, 128, 34)'
+       button_remove5.value='delete'
+       button_remove5.style.width='50px'
+       button_remove5.style.background='#00598a'
        button_remove5.style.border='none'
-       button_remove5.style.marginLeft='20px'
+       button_remove5.style.marginLeft='10px'
        button_remove5.style.marginRight="10px"
-       button_remove5.style.borderRadius="20px"
-       button_remove5.style.padding="2px"
+       button_remove5.style.borderRadius="8px"
+       button_remove5.style.color='#fff'
+       button_remove5.style.height='20px'
        let empty_button5 = document.createElement('input')
        empty_button5.type='button'
-       empty_button5.style.width='10px'
+       empty_button5.style.width='157px'
        empty_button5.style.background='none'
        empty_button5.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove5)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
            // блок 2
            let div_window5 =document.createElement('div')
            div_window5.append(`${text_window.innerHTML}`) 
            div_window5.append(empty_button5)
            div_window5.append('£'+`${Number(price_window.innerHTML)}`)
+           div_window5.style.marginBottom='15px'
+           div_window5.style.fontFamily='Roboto'
+           div_window5.style.fontSize='14px'
            inner_block_window5.append(div_window5)
        inner_block5.append(div)
        input_block.value = Number(input_block.value) + 20
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +24)
+     
+       inner_block_window5.style.marginTop='15px'
 }
 function del5(){
   input_block.value = Number(input_block.value) - 20
@@ -443,33 +522,44 @@ function fn6(e){
        button_remove6.addEventListener('click',s)
        button_remove6.addEventListener('click',del6)
        button_remove6.addEventListener('click',rem_window6)
-       button_remove6.value='-'
-       button_remove6.style.width='20px'
-       button_remove6.style.background='rgb(179, 128, 34)'
+       button_remove6.value='delete'
+       button_remove6.style.width='50px'
+       button_remove6.style.background='#00598a'
        button_remove6.style.border='none'
-       button_remove6.style.marginLeft='20px'
+       button_remove6.style.marginLeft='10px'
        button_remove6.style.marginRight="10px"
-       button_remove6.style.borderRadius="20px"
-       button_remove6.style.padding="2px"
+       button_remove6.style.borderRadius="8px"
+       button_remove6.style.color='#fff'
+       button_remove6.style.height='20px'
        let empty_button6 = document.createElement('input')
        empty_button6.type='button'
-       empty_button6.style.width='10px'
+       empty_button6.style.width='107px'
        empty_button6.style.background='none'
        empty_button6.style.border='none'
        
        div.append(`${text.innerHTML}`)
        div.append(button_remove6)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
              // блок 2
              let div_window6 =document.createElement('div')
              div_window6.append(`${text_window.innerHTML}`)
              div_window6.append(empty_button6)     
              div_window6.append('£'+`${Number(price_window.innerHTML)}`)
+             div_window6.style.marginBottom='15px'
+             div_window6.style.fontFamily='Roboto'
+             div_window6.style.fontSize='14px'
              inner_block_window6.append(div_window6)
        inner_block6.append(div)
        input_block.value = Number(input_block.value) + 20
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +24)
+ 
+       inner_block_window6.style.marginTop='15px'
 
 }
 function del6(){
@@ -503,32 +593,43 @@ function fn7(e){
        button_remove7.addEventListener('click',s)
        button_remove7.addEventListener('click',del7)
        button_remove7.addEventListener('click',rem_window7)
-       button_remove7.value='-'
-       button_remove7.style.width='20px'
-       button_remove7.style.background='rgb(179, 128, 34)'
+       button_remove7.value='delete'
+       button_remove7.style.width='50px'
+       button_remove7.style.background='#00598a'
        button_remove7.style.border='none'
-       button_remove7.style.marginLeft='20px'
+       button_remove7.style.marginLeft='10px'
        button_remove7.style.marginRight="10px"
-       button_remove7.style.borderRadius="20px"
-       button_remove7.style.padding="2px"
+       button_remove7.style.borderRadius="8px"
+       button_remove7.style.color='#fff'
+       button_remove7.style.height='20px'
        let empty_button7 = document.createElement('input')
        empty_button7.type='button'
-       empty_button7.style.width='10px'
+       empty_button7.style.width='187px'
        empty_button7.style.background='none'
        empty_button7.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove7)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
          // блок 2
          let div_window7 =document.createElement('div')
          div_window7.append(`${text_window.innerHTML}`) 
          div_window7.append(empty_button7)    
          div_window7.append('£'+`${Number(price_window.innerHTML)}`)
+         div_window7.style.marginBottom='15px'
+         div_window7.style.fontFamily='Roboto'
+         div_window7.style.fontSize='14px'
          inner_block_window7.append(div_window7)
        inner_block7.append(div)
        input_block.value = Number(input_block.value) + 20
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +24)
+
+       inner_block_window7.style.marginTop='15px'
 
 }
 function del7(){
@@ -563,32 +664,43 @@ function fn8(e){
        button_remove8.addEventListener('click',s)
        button_remove8.addEventListener('click',del8)
        button_remove8.addEventListener('click',rem_window8)
-       button_remove8.value='-'
-       button_remove8.style.width='20px'
-       button_remove8.style.background='rgb(179, 128, 34)'
+       button_remove8.value='delete'
+       button_remove8.style.width='50px'
+       button_remove8.style.background='#00598a'
        button_remove8.style.border='none'
-       button_remove8.style.marginLeft='20px'
+       button_remove8.style.marginLeft='10px'
        button_remove8.style.marginRight="10px"
-       button_remove8.style.borderRadius="20px"
-       button_remove8.style.padding="2px"
+       button_remove8.style.borderRadius="8px"
+       button_remove8.style.color='#fff'
+       button_remove8.style.height='20px'
        let empty_button8 = document.createElement('input')
        empty_button8.type='button'
-       empty_button8.style.width='10px'
+       empty_button8.style.width='151px'
        empty_button8.style.background='none'
        empty_button8.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove8)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
         // блок 2
         let div_window8 =document.createElement('div')
         div_window8.append(`${text_window.innerHTML}`)    
         div_window8.append(empty_button8) 
         div_window8.append('£'+`${Number(price_window.innerHTML)}`)
+        div_window8.style.marginBottom='15px'
+        div_window8.style.fontFamily='Roboto'
+        div_window8.style.fontSize='14px'
         inner_block_window8.append(div_window8)
        inner_block8.append(div)
        input_block.value = Number(input_block.value) + 20
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +24)
+    
+       inner_block_window8.style.marginTop='15px'
 
 }
 function del8(){
@@ -623,32 +735,43 @@ function fn9(e){
        button_remove9.addEventListener('click',s)
        button_remove9.addEventListener('click',del9)
        button_remove9.addEventListener('click',rem_window9)
-       button_remove9.value='-'
-       button_remove9.style.width='20px'
-       button_remove9.style.background='rgb(179, 128, 34)'
+       button_remove9.value='delete'
+       button_remove9.style.width='50px'
+       button_remove9.style.background='#00598a'
        button_remove9.style.border='none'
-       button_remove9.style.marginLeft='20px'
+       button_remove9.style.marginLeft='10px'
        button_remove9.style.marginRight="10px"
-       button_remove9.style.borderRadius="20px"
-       button_remove9.style.padding="2px"
+       button_remove9.style.borderRadius="8px"
+       button_remove9.style.color='#fff'
+       button_remove9.style.height='20px'
        let empty_button9 = document.createElement('input')
        empty_button9.type='button'
-       empty_button9.style.width='10px'
+       empty_button9.style.width='131px'
        empty_button9.style.background='none'
        empty_button9.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove9)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
          // блок 2
          let div_window9 =document.createElement('div')
          div_window9.append(`${text_window.innerHTML}`)    
          div_window9.append(empty_button9) 
          div_window9.append('£'+`${Number(price_window.innerHTML)}`)
+         div_window9.style.marginBottom='15px'
+         div_window9.style.fontFamily='Roboto'
+         div_window9.style.fontSize='14px'
          inner_block_window9.append(div_window9)
        inner_block9.append(div)
        input_block.value = Number(input_block.value) + 20 
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +24) 
+       
+       inner_block_window9.style.marginTop='15px'
 
 }
 function del9(){
@@ -683,32 +806,43 @@ function fn10(e){
        button_remove10.addEventListener('click',s)
        button_remove10.addEventListener('click',del10)
        button_remove10.addEventListener('click',rem_window10)
-       button_remove10.value='-'
-       button_remove10.style.width='20px'
-       button_remove10.style.background='rgb(179, 128, 34)'
+       button_remove10.value='delete'
+       button_remove10.style.width='50px'
+       button_remove10.style.background='#00598a'
        button_remove10.style.border='none'
-       button_remove10.style.marginLeft='20px'
+       button_remove10.style.marginLeft='10px'
        button_remove10.style.marginRight="10px"
-       button_remove10.style.borderRadius="20px"
-       button_remove10.style.padding="2px"
+       button_remove10.style.borderRadius="8px"
+       button_remove10.style.color='#fff'
+       button_remove10.style.height='20px'
        let empty_button10 = document.createElement('input')
        empty_button10.type='button'
-       empty_button10.style.width='10px'
+       empty_button10.style.width='249px'
        empty_button10.style.background='none'
        empty_button10.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove10)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
          // блок 2
          let div_window10 =document.createElement('div')
          div_window10.append(`${text_window.innerHTML}`)     
          div_window10.append(empty_button10)
          div_window10.append('£'+`${Number(price_window.innerHTML)}`)
+         div_window10.style.marginBottom='15px'
+         div_window10.style.fontFamily='Roboto'
+         div_window10.style.fontSize='14px'
          inner_block_window10.append(div_window10)
        inner_block10.append(div)
        input_block.value = Number(input_block.value) + 150
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +180)
+     
+       inner_block_window10.style.marginTop='15px'
 
 }
 function del10(){
@@ -743,33 +877,44 @@ function fn11(e){
        button_remove11.addEventListener('click',s)
        button_remove11.addEventListener('click',del11)
        button_remove11.addEventListener('click',rem_window11)
-       button_remove11.value='-'
-       button_remove11.style.width='20px'
-       button_remove11.style.background='rgb(179, 128, 34)'
+       button_remove11.value='delete'
+       button_remove11.style.width='50px'
+       button_remove11.style.background='#00598a'
        button_remove11.style.border='none'
-       button_remove11.style.marginLeft='20px'
+       button_remove11.style.marginLeft='10px'
        button_remove11.style.marginRight="10px"
-       button_remove11.style.borderRadius="20px"
-       button_remove11.style.padding="2px"
+       button_remove11.style.borderRadius="8px"
+       button_remove11.style.color='#fff'
+       button_remove11.style.height='20px'
        let empty_button11 = document.createElement('input')
        empty_button11.type='button'
-       empty_button11.style.width='10px'
+       empty_button11.style.width='245px'
        empty_button11.style.background='none'
        empty_button11.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove11)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
        // блок 2
        let div_window11 =document.createElement('div')
        div_window11.append(`${text_window.innerHTML}`)
        div_window11.append(empty_button11)     
        div_window11.append('£'+`${Number(price_window.innerHTML)}`)
+       div_window11.style.marginBottom='15px'
+       div_window11.style.fontFamily='Roboto'
+       div_window11.style.fontSize='14px'
        inner_block_window11.append(div_window11)
        inner_block11.append(div)
 
        input_block.value = Number(input_block.value) + 75
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +90)
+     
+       inner_block_window11.style.marginTop='15px'
 }
 function del11(){
   input_block.value = Number(input_block.value) - 75
@@ -802,32 +947,43 @@ function fn12(e){
        button_remove12.addEventListener('click',s)
        button_remove12.addEventListener('click',del12)
        button_remove12.addEventListener('click',rem_window12)
-       button_remove12.value='-'
-       button_remove12.style.width='20px'
-       button_remove12.style.background='rgb(179, 128, 34)'
-       button_remove12.style.border='none'
-       button_remove12.style.marginLeft='20px'
-       button_remove12.style.marginRight="10px"
-       button_remove12.style.borderRadius="20px"
-       button_remove12.style.padding="2px"
+       button_remove12.value='delete'
+          button_remove12.style.width='50px'
+          button_remove12.style.background='#00598a'
+          button_remove12.style.border='none'
+          button_remove12.style.marginLeft='10px'
+          button_remove12.style.marginRight="10px"
+          button_remove12.style.borderRadius="8px"
+          button_remove12.style.color='#fff'
+          button_remove12.style.height='20px'
        let empty_button12 = document.createElement('input')
        empty_button12.type='button'
-       empty_button12.style.width='10px'
+       empty_button12.style.width='255px'
        empty_button12.style.background='none'
        empty_button12.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove12)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
        // блок 2
        let div_window12 =document.createElement('div')
        div_window12.append(`${text_window.innerHTML}`)     
        div_window12.append(empty_button12)
        div_window12.append('£'+`${Number(price_window.innerHTML)}`)
+       div_window12.style.marginBottom='15px'
+       div_window12.style.fontFamily='Roboto'
+       div_window12.style.fontSize='14px'
        inner_block_window12.append(div_window12)
        inner_block12.append(div)
        input_block.value = Number(input_block.value) + 75
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +90)
+    
+       inner_block_window12.style.marginTop='15px'
 
 }
 function del12(){
@@ -862,32 +1018,43 @@ function fn13(e){
        button_remove13.addEventListener('click',s)
        button_remove13.addEventListener('click',del13)
        button_remove13.addEventListener('click',rem_window13)
-       button_remove13.value='-'
-       button_remove13.style.width='20px'
-       button_remove13.style.background='rgb(179, 128, 34)'
+       button_remove13.value='delete'
+       button_remove13.style.width='50px'
+       button_remove13.style.background='#00598a'
        button_remove13.style.border='none'
-       button_remove13.style.marginLeft='20px'
+       button_remove13.style.marginLeft='10px'
        button_remove13.style.marginRight="10px"
-       button_remove13.style.borderRadius="20px"
-       button_remove13.style.padding="2px"
+       button_remove13.style.borderRadius="8px"
+       button_remove13.style.color='#fff'
+       button_remove13.style.height='20px'
        let empty_button13 = document.createElement('input')
        empty_button13.type='button'
-       empty_button13.style.width='10px'
+       empty_button13.style.width='268px'
        empty_button13.style.background='none'
        empty_button13.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove13)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style,fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
         // блок 2
         let div_window13 =document.createElement('div')
         div_window13.append(`${text_window.innerHTML}`) 
         div_window13.append(empty_button13)    
         div_window13.append('£'+`${Number(price_window.innerHTML)}`)
+        div_window13.style.marginBottom='15px'
+        div_window13.style.fontFamily='Roboto'
+        div_window13.style.fontSize='14px'
         inner_block_window13.append(div_window13)
        inner_block13.append(div)
        input_block.value = Number(input_block.value) + 200
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +240)
+     
+       inner_block_window13.style.marginTop='15px'
 
 }
 function del13(){
@@ -922,32 +1089,43 @@ function fn14(e){
        button_remove14.addEventListener('click',s)
        button_remove14.addEventListener('click',del14)
        button_remove14.addEventListener('click',rem_window14)
-       button_remove14.value='-'
-       button_remove14.style.width='20px'
-       button_remove14.style.background='rgb(179, 128, 34)'
+       button_remove14.value='delete'
+       button_remove14.style.width='50px'
+       button_remove14.style.background='#00598a'
        button_remove14.style.border='none'
-       button_remove14.style.marginLeft='20px'
+       button_remove14.style.marginLeft='10px'
        button_remove14.style.marginRight="10px"
-       button_remove14.style.borderRadius="20px"
-       button_remove14.style.padding="2px"
+       button_remove14.style.borderRadius="8px"
+       button_remove14.style.color='#fff'
+       button_remove14.style.height='20px'
        let empty_button14 = document.createElement('input')
        empty_button14.type='button'
-       empty_button14.style.width='10px'
+       empty_button14.style.width='227px'
        empty_button14.style.background='none'
        empty_button14.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove14)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
         // блок 2
         let div_window14 =document.createElement('div')
         div_window14.append(`${text_window.innerHTML}`)   
         div_window14.append(empty_button14)  
         div_window14.append('£'+`${Number(price_window.innerHTML)}`)
+        div_window14.style.marginBottom='15px'
+        div_window14.style.fontFamily='Roboto'
+        div_window14.style.fontSize='14px'
         inner_block_window14.append(div_window14)
        inner_block14.append(div)
        input_block.value = Number(input_block.value) + 85
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +102)
+    
+       inner_block_window14.style.marginTop='15px'
 
 }
 function del14(){
@@ -983,32 +1161,43 @@ function fn15(e){
        button_remove15.addEventListener('click',s)
        button_remove15.addEventListener('click',del15)
        button_remove15.addEventListener('click',rem_window15)
-       button_remove15.value='-'
-       button_remove15.style.width='20px'
-       button_remove15.style.background='rgb(179, 128, 34)'
-       button_remove15.style.border='none'
-       button_remove15.style.marginLeft='20px'
-       button_remove15.style.marginRight="10px"
-       button_remove15.style.borderRadius="20px"
-       button_remove15.style.padding="2px"
+       button_remove15.value='delete'
+          button_remove15.style.width='50px'
+          button_remove15.style.background='#00598a'
+          button_remove15.style.border='none'
+          button_remove15.style.marginLeft='10px'
+          button_remove15.style.marginRight="10px"
+          button_remove15.style.borderRadius="8px"
+          button_remove15.style.color='#fff'
+          button_remove15.style.height='20px'
        let empty_button15 = document.createElement('input')
        empty_button15.type='button'
-       empty_button15.style.width='10px'
+       empty_button15.style.width='210px'
        empty_button15.style.background='none'
        empty_button15.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove15)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
        // блок 2
        let div_window15 =document.createElement('div')
        div_window15.append(`${text_window.innerHTML}`)
        div_window15.append(empty_button15)     
        div_window15.append('£'+`${Number(price_window.innerHTML)}`)
+       div_window15.style.marginBottom='15px'
+       div_window15.style.fontFamily='Roboto'
+       div_window15.style.fontSize='14px'
        inner_block_window15.append(div_window15)
        inner_block15.append(div)
        input_block.value = Number(input_block.value) + 20
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +24)
+ 
+       inner_block_window15.style.marginTop='15px'
 
 }
 function del15(){
@@ -1043,32 +1232,43 @@ function fn16(e){
        button_remove16.addEventListener('click',s)
        button_remove16.addEventListener('click',del16)
        button_remove16.addEventListener('click',rem_window16)
-       button_remove16.value='-'
-       button_remove16.style.width='20px'
-       button_remove16.style.background='rgb(179, 128, 34)'
+       button_remove16.value='delete'
+       button_remove16.style.width='50px'
+       button_remove16.style.background='#00598a'
        button_remove16.style.border='none'
-       button_remove16.style.marginLeft='20px'
+       button_remove16.style.marginLeft='10px'
        button_remove16.style.marginRight="10px"
-       button_remove16.style.borderRadius="20px"
-       button_remove16.style.padding="2px"
+       button_remove16.style.borderRadius="8px"
+       button_remove16.style.color='#fff'
+       button_remove16.style.height='20px'
        let empty_button16 = document.createElement('input')
        empty_button16.type='button'
-       empty_button16.style.width='10px'
+       empty_button16.style.width='264px'
        empty_button16.style.background='none'
        empty_button16.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove16)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
        // блок 2
        let div_window16 =document.createElement('div')
        div_window16.append(`${text_window.innerHTML}`)  
        div_window16.append(empty_button16)   
        div_window16.append('£'+`${Number(price_window.innerHTML)}`)
+       div_window16.style.marginBottom='15px'
+       div_window16.style.fontFamily='Roboto'
+       div_window16.style.fontSize='14px'
        inner_block_window16.append(div_window16)
        inner_block16.append(div)
        input_block.value = Number(input_block.value) + 500
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) +600)
+
+       inner_block_window16.style.marginTop='15px'
 
 }
 function del16(){
@@ -1103,32 +1303,43 @@ function fn17(e){
        button_remove17.addEventListener('click',s)
        button_remove17.addEventListener('click',del17)
        button_remove17.addEventListener('click',rem_window17)
-       button_remove17.value='-'
-       button_remove17.style.width='20px'
-       button_remove17.style.background='rgb(179, 128, 34)'
-       button_remove17.style.border='none'
-       button_remove17.style.marginLeft='20px'
-       button_remove17.style.marginRight="10px"
-       button_remove17.style.borderRadius="20px"
-       button_remove17.style.padding="2px"
+       button_remove17.value='delete'
+          button_remove17.style.width='50px'
+          button_remove17.style.background='#00598a'
+          button_remove17.style.border='none'
+          button_remove17.style.marginLeft='10px'
+          button_remove17.style.marginRight="10px"
+          button_remove17.style.borderRadius="8px"
+          button_remove17.style.color='#fff'
+          button_remove17.style.height='20px'
        let empty_button17 = document.createElement('input')
        empty_button17.type='button'
-       empty_button17.style.width='10px'
+       empty_button17.style.width='193px'
        empty_button17.style.background='none'
        empty_button17.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove17)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
         // блок 2
         let div_window17 =document.createElement('div')
         div_window17.append(`${text_window.innerHTML}`)   
         div_window17.append(empty_button17)  
         div_window17.append('£'+`${Number(price_window.innerHTML)}`)
+        div_window17.style.marginBottom='15px'
+        div_window17.style.fontFamily='Roboto'
+        div_window17.style.fontSize='14px'
         inner_block_window17.append(div_window17)
        inner_block17.append(div)
        input_block.value = Number(input_block.value) + 90
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) + 108)
+      
+       inner_block_window17.style.marginTop='15px'
 
 }
 function del17(){
@@ -1162,32 +1373,43 @@ function fn18(e){
        button_remove18.addEventListener('click',s)
        button_remove18.addEventListener('click',del18)
        button_remove18.addEventListener('click',rem_window18)
-       button_remove18.value='-'
-       button_remove18.style.width='20px'
-       button_remove18.style.background='rgb(179, 128, 34)'
+       button_remove18.value='delete'
+       button_remove18.style.width='50px'
+       button_remove18.style.background='#00598a'
        button_remove18.style.border='none'
-       button_remove18.style.marginLeft='20px'
+       button_remove18.style.marginLeft='10px'
        button_remove18.style.marginRight="10px"
-       button_remove18.style.borderRadius="20px"
-       button_remove18.style.padding="2px"
+       button_remove18.style.borderRadius="8px"
+       button_remove18.style.color='#fff'
+       button_remove18.style.height='20px'
        let empty_button18 = document.createElement('input')
        empty_button18.type='button'
-       empty_button18.style.width='10px'
+       empty_button18.style.width='5px'
        empty_button18.style.background='none'
        empty_button18.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove18)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
         // блок 2
         let div_window18 =document.createElement('div')
         div_window18.append(`${text_window.innerHTML}`)    
         div_window18.append(empty_button18) 
         div_window18.append('£'+`${Number(price_window.innerHTML)}`)
+        div_window18.style.marginBottom='15px'
+        div_window18.style.fontFamily='Roboto'
+        div_window18.style.fontSize='14px'
         inner_block_window18.append(div_window18)
        inner_block18.append(div)
        input_block.value = Number(input_block.value) + 75
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) + 90)
+       
+       inner_block_window18.style.marginTop='15px'
       }
 function del18(){
   input_block.value = Number(input_block.value) - 75
@@ -1221,32 +1443,43 @@ function fn19(e){
        button_remove19.addEventListener('click',s)
        button_remove19.addEventListener('click',del19)
        button_remove19.addEventListener('click',rem_window19)
-       button_remove19.value='-'
-       button_remove19.style.width='20px'
-       button_remove19.style.background='rgb(179, 128, 34)'
-       button_remove19.style.border='none'
-       button_remove19.style.marginLeft='20px'
-       button_remove19.style.marginRight="10px"
-       button_remove19.style.borderRadius="20px"
-       button_remove19.style.padding="2px"
+       button_remove19.value='delete'
+          button_remove19.style.width='50px'
+          button_remove19.style.background='#00598a'
+          button_remove19.style.border='none'
+          button_remove19.style.marginLeft='10px'
+          button_remove19.style.marginRight="10px"
+          button_remove19.style.borderRadius="8px"
+          button_remove19.style.color='#fff'
+          button_remove19.style.height='20px'
        let empty_button19 = document.createElement('input')
        empty_button19.type='button'
-       empty_button19.style.width='10px'
+       empty_button19.style.width='299px'
        empty_button19.style.background='none'
        empty_button19.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove19)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
        // блок 2
        let div_window19 =document.createElement('div')
        div_window19.append(`${text_window.innerHTML}`)   
        div_window19.append(empty_button19)  
        div_window19.append('£'+`${Number(price_window.innerHTML)}`)
+       div_window19.style.marginBottom='15px'
+       div_window19.style.fontFamily='Roboto'
+       div_window19.style.fontSize='14px'
        inner_block_window19.append(div_window19)
        inner_block19.append(div)
        input_block.value = Number(input_block.value) + 200
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) + 240)
+  
+       inner_block_window19.style.marginTop='15px'
 }
 function del19(){
   input_block.value = Number(input_block.value) - 200
@@ -1281,32 +1514,44 @@ function fn20(e){
        button_remove20.addEventListener('click',s)
        button_remove20.addEventListener('click',del20)
        button_remove20.addEventListener('click',rem_window20)
-       button_remove20.value='-'
-       button_remove20.style.width='20px'
-       button_remove20.style.background='rgb(179, 128, 34)'
-       button_remove20.style.border='none'
-       button_remove20.style.marginLeft='20px'
-       button_remove20.style.marginRight="10px"
-       button_remove20.style.borderRadius="20px"
-       button_remove20.style.padding="2px"
+       button_remove20.value='delete'
+          button_remove20.style.width='50px'
+          button_remove20.style.background='#00598a'
+          button_remove20.style.border='none'
+          button_remove20.style.marginLeft='10px'
+          button_remove20.style.marginRight="10px"
+          button_remove20.style.borderRadius="8px"
+          button_remove20.style.color='#fff'
+          button_remove20.style.height='20px'
        let empty_button20 = document.createElement('input')
        empty_button20.type='button'
-       empty_button20.style.width='10px'
+       empty_button20.style.width='299px'
        empty_button20.style.background='none'
        empty_button20.style.border='none'
        div.append(`${text.innerHTML}`)
        div.append(button_remove20)
        div.append('£'+`${price.innerHTML}`)
+       div.style.fontFamily='Roboto'
+       div.style.fontSize='14px'
+       div.style.marginTop='15px'
+       div.style.display='grid'
+       div.style.gridTemplateColumns='210px 85px 35px'
        // блок 2
        let div_window20 =document.createElement('div')
        div_window20.append(`${text_window.innerHTML}`)     
        div_window20.append(empty_button20)
        div_window20.append('£'+`${Number(price_window.innerHTML)}`)
+       div_window20.style.marginBottom='15px'
+       div_window20.style.fontFamily='Roboto'
+       div_window20.style.fontSize='14px'
        inner_block_window20.append(div_window20)
        inner_block20.append(div)
        input_block.value = Number(input_block.value) + 300
        input_vat_block.value = Number(input_block.value) * 0.2
        input_total_block.value = (Number(input_total_block.value) + 360)
+       
+       inner_block_window20.style.marginTop='15px'
+       
 }
 function del20(){
   input_block.value = Number(input_block.value) - 300
