@@ -20,14 +20,17 @@
 .list_links p{
  font-weight: bold;
   font-size: 22px;
+  font-family: 'Roboto';
 }
 .list_contact p{
   font-weight: bold;
   font-size: 22px;
+  font-family: 'Roboto';
 }
 .list_links a{
   text-decoration: none;
   color: #aca9a9;
+  font-family: 'Roboto';
 }
 
 .title_info{
@@ -42,7 +45,7 @@
     justify-content: center;
     align-self: center;
  
-    padding: 15px;
+   
     border-radius: 45px;
 }
 .text1{
@@ -80,7 +83,7 @@
   grid-template-columns: 1.1fr 0.3fr 0.5fr 0.6fr;
   justify-content: center;
   align-items: baseline;
-  grid-column-gap: 20px;
+ 
     
 }
 .txt3{
@@ -206,26 +209,29 @@
   }
   .hb1,.hb2{color: #000; font-weight: bold;}
   .header_box{
-    display: inline-flex;
+    display: flex;
+    justify-content: space-between;
+    margin-right: -5px;
     padding: 20px;
     font-size: 20px;
   }
   .txtbr{
   
   display: none;}
-  .hb2{padding-left: 250px; font-family: Roboto;}
-  .hb3{padding-left: 70px; font-family: Roboto; font-size: 14px;}
+  .hb2{ font-family: Roboto;}
+  .hb3{ margin-right: 10px; font-family: Roboto; font-size: 14px;}
   .hb1{text-align: left; font-family: Roboto;}
   .hb4{padding-left: 240px;font-family: Roboto;}
   .hb5{padding-left: 265px; font-family: Roboto;}
   .hb6{padding-left: 250px; font-size: 20px; font-weight: bold; font-family: Roboto;}
   .txtbx{font-size: 20px;font-weight: bold;}
   .service_box{
-    display: inline-block;
+
     padding: 20px;
     font-size: 14px;
   }
-  .orient{display: inline-flex; 
+  .orient{display: flex;
+    justify-content: space-between; 
   }
   .orient_header{
     font-family: Roboto;
@@ -255,13 +261,13 @@ justify-content: space-between;
   }
   .dividing_block{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.5fr 0.5fr;
   justify-content: space-between;
   grid-column-gap: 15px;
 
   }
   .hr{
-    width: 700px;
+    // width: 700px;
   }
   .btn2{
     width: 100%;
@@ -392,4 +398,21 @@ justify-content: space-between;
 }
 .block_inside_add_window{
   
+}
+@media (max-width:1156px){
+
+}
+@media (max-width:840px){
+  .dividing_block{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width:540px){
+  .title_form_of_pay{
+    font-size: 30px;
+  }
+    .tooltip .tooltiptext{
+    width: 100px;
+  }
 }

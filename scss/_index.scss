@@ -184,6 +184,7 @@ color: #017eff;
 .footer_block{padding-top: 20px;
   line-height: 55px;
   display: grid;
+  font-family: 'Roboto';
   grid-template-columns: 0.5fr 1.5fr 1fr;
   grid-column-gap: 35px;
   color: #727272;
@@ -290,5 +291,20 @@ color: #017eff;
         }
       }
     }
+  }
+}
+@media (max-width:661px){
+  .service{
+    & .block_of_service{
+      & .block_service{
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}
+#slide1{
+  h1{
+    font-size: 78px;
   }
 }

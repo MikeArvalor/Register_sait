@@ -75,7 +75,8 @@ window.onclick = function(event) {
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+      
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
       //  БЛОК 2
       let div_window =document.createElement('div')
      
@@ -184,8 +185,9 @@ function fn1(e){
       div.style.fontFamily='Roboto'
       div.style.fontSize='14px'
       div.style.marginTop='15px'
+      div.style.marginRight='-8px'
       div.style.display='grid'
-      div.style.gridTemplateColumns='210px 85px 35px'
+      div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
         // блок 2
         let div_window1 =document.createElement('div')
         div_window1.append(`${text_window.innerHTML}`) 
@@ -261,7 +263,7 @@ function fn2(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
         // блок 2
         let div_window2 =document.createElement('div')
         div_window2.append(`${text_window.innerHTML}`)  
@@ -331,8 +333,9 @@ function fn3(e){
        div.style.fontFamily='Roboto'
        div.style.fontSize='14px'
        div.style.marginTop='15px'
+       div.style.marginRight='-8px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
        
         // блок 2
         let div_window3 =document.createElement('div')
@@ -404,7 +407,7 @@ function fn4(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
           // блок 2
           let div_window4 =document.createElement('div')
           div_window4.append(`${text_window.innerHTML}`) 
@@ -474,7 +477,7 @@ function fn5(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
            // блок 2
            let div_window5 =document.createElement('div')
            div_window5.append(`${text_window.innerHTML}`) 
@@ -544,7 +547,7 @@ function fn6(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
              // блок 2
              let div_window6 =document.createElement('div')
              div_window6.append(`${text_window.innerHTML}`)
@@ -614,7 +617,7 @@ function fn7(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
          // блок 2
          let div_window7 =document.createElement('div')
          div_window7.append(`${text_window.innerHTML}`) 
@@ -685,7 +688,7 @@ function fn8(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
         // блок 2
         let div_window8 =document.createElement('div')
         div_window8.append(`${text_window.innerHTML}`)    
@@ -756,7 +759,7 @@ function fn9(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
          // блок 2
          let div_window9 =document.createElement('div')
          div_window9.append(`${text_window.innerHTML}`)    
@@ -827,7 +830,8 @@ function fn10(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.marginRight='-8px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
          // блок 2
          let div_window10 =document.createElement('div')
          div_window10.append(`${text_window.innerHTML}`)     
@@ -898,7 +902,7 @@ function fn11(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
        // блок 2
        let div_window11 =document.createElement('div')
        div_window11.append(`${text_window.innerHTML}`)
@@ -968,7 +972,7 @@ function fn12(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
        // блок 2
        let div_window12 =document.createElement('div')
        div_window12.append(`${text_window.innerHTML}`)     
@@ -1039,7 +1043,8 @@ function fn13(e){
        div.style,fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.marginRight='-8px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
         // блок 2
         let div_window13 =document.createElement('div')
         div_window13.append(`${text_window.innerHTML}`) 
@@ -1110,7 +1115,7 @@ function fn14(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
         // блок 2
         let div_window14 =document.createElement('div')
         div_window14.append(`${text_window.innerHTML}`)   
@@ -1182,7 +1187,7 @@ function fn15(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
        // блок 2
        let div_window15 =document.createElement('div')
        div_window15.append(`${text_window.innerHTML}`)
@@ -1253,7 +1258,8 @@ function fn16(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.marginRight='-8px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
        // блок 2
        let div_window16 =document.createElement('div')
        div_window16.append(`${text_window.innerHTML}`)  
@@ -1324,7 +1330,7 @@ function fn17(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
         // блок 2
         let div_window17 =document.createElement('div')
         div_window17.append(`${text_window.innerHTML}`)   
@@ -1394,7 +1400,7 @@ function fn18(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
         // блок 2
         let div_window18 =document.createElement('div')
         div_window18.append(`${text_window.innerHTML}`)    
@@ -1464,7 +1470,8 @@ function fn19(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.marginRight='-8px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'
        // блок 2
        let div_window19 =document.createElement('div')
        div_window19.append(`${text_window.innerHTML}`)   
@@ -1535,7 +1542,8 @@ function fn20(e){
        div.style.fontSize='14px'
        div.style.marginTop='15px'
        div.style.display='grid'
-       div.style.gridTemplateColumns='210px 85px 35px'
+       div.style.marginRight='-8px'
+       div.style.gridTemplateColumns='5fr 0.5fr 0.5fr'  
        // блок 2
        let div_window20 =document.createElement('div')
        div_window20.append(`${text_window.innerHTML}`)     
