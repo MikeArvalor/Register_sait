@@ -261,7 +261,7 @@ justify-content: space-between;
   }
   .dividing_block{
   display: grid;
-  grid-template-columns: 1.5fr 0.5fr;
+  grid-template-columns: 1.5fr 0.8fr;
   justify-content: space-between;
   grid-column-gap: 15px;
 
@@ -401,6 +401,11 @@ justify-content: space-between;
 }
 @media (max-width:1156px){
 
+}
+@media (max-width:1024px){
+  .modal_form .input_form_first_name, .modal_form .input_form_surname, .modal_form .input_form_tel, .modal_form .input_form_repeat_email, .modal_form .input_form_email{
+    width: 100%;
+  }
 }
 @media (max-width:840px){
   .dividing_block{
