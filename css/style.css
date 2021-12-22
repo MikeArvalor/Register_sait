@@ -1842,6 +1842,9 @@
   .active a {
     color: #fff;
   }
+  .header__block {
+    padding: 0;
+  }
   .header__block .header__burger {
     display: block;
     margin: 15px 0 15px 0;
