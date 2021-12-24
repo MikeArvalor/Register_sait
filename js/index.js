@@ -62,7 +62,7 @@ window.onclick = function(event) {
            button_remove.style.height='20px'
        let empty_button = document.createElement('input')
        empty_button.type='button'
-       empty_button.style.width='239px'
+       empty_button.style.width='100%'
        empty_button.style.background='none'
        empty_button.style.border='none'
     //    div.innerHTML=`${text.innerHTML}  ${price.innerHTML}` 
@@ -88,6 +88,8 @@ window.onclick = function(event) {
       div_window.style.marginBottom='15px'
       div_window.style.fontFamily='Roboto'
       div_window.style.fontSize='14px'
+      div_window.style.display= 'grid'
+      div_window.style.gridTemplateColumns = '6.5fr 1fr 1fr'
       
       /*
       попытка через input
@@ -108,7 +110,6 @@ window.onclick = function(event) {
        inner_block.append(div)
        inner_block_window.append(div_window)
        inner_block_window.style.display='grid'
-       inner_block_window.style.marginLeft='35px'
        inner_block_window.style.marginTop='15px'
       //  inner_block_window.append(div)
       // if(total_price==total_price){
@@ -176,7 +177,6 @@ function fn1(e){
           button_remove1.style.height='20px'
           let empty_button1 = document.createElement('input')
           empty_button1.type='button'
-          empty_button1.style.width='223px'
           empty_button1.style.background='none'
           empty_button1.style.border='none'
       div.append(`${text.innerHTML}`)
@@ -196,6 +196,8 @@ function fn1(e){
         div_window1.style.marginBottom='15px'
         div_window1.style.fontFamily='Roboto'
         div_window1.style.fontSize='14px'
+        div_window1.style.display= 'grid'
+      div_window1.style.gridTemplateColumns = '6.5fr 1fr 1fr'
         inner_block_window1.append(div_window1)
       inner_block.append(div)
       input_block.value = Number(input_block.value) + 150
@@ -253,7 +255,7 @@ function fn2(e){
        button_remove2.style.height='20px'
        let empty_button2 = document.createElement('input')
        empty_button2.type='button'
-       empty_button2.style.width='168px'
+       
        empty_button2.style.background='none'
        empty_button2.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -272,6 +274,8 @@ function fn2(e){
         div_window2.style.marginBottom='15px'
         div_window2.style.fontFamily='Roboto'
         div_window2.style.fontSize='14px'
+        div_window2.style.display= 'grid'
+      div_window2.style.gridTemplateColumns = '6.5fr 1fr 1fr'
         inner_block_window2.append(div_window2)
        inner_block2.append(div)
        input_block.value = Number(input_block.value) + 60
@@ -324,7 +328,7 @@ function fn3(e){
        button_remove3.style.height='20px'
        let empty_button3 = document.createElement('input')
        empty_button3.type='button'
-       empty_button3.style.width='160px'
+       
        empty_button3.style.background='none'
        empty_button3.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -345,6 +349,8 @@ function fn3(e){
         div_window3.style.marginBottom='15px'
         div_window3.style.fontFamily='Roboto'
         div_window3.style.fontSize='14px'
+        div_window3.style.display= 'grid'
+      div_window3.style.gridTemplateColumns = '6.5fr 1fr 1fr'
         inner_block_window3.append(div_window3)
        inner_block3.append(div)
        input_block.value = Number(input_block.value) + 120
@@ -397,7 +403,7 @@ function fn4(e){
        button_remove4.style.height='20px'
        let empty_button4 = document.createElement('input')
        empty_button4.type='button'
-       empty_button4.style.width='265px'
+       
        empty_button4.style.background='none'
        empty_button4.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -416,6 +422,8 @@ function fn4(e){
           div_window4.style.marginBottom='15px'
           div_window4.style.fontFamily='Roboto'
           div_window4.style.fontSize='14px'
+          div_window4.style.display= 'grid'
+          div_window4.style.gridTemplateColumns = '6.5fr 1fr 1fr'
           inner_block_window4.append(div_window4)
        inner_block4.append(div)
        input_block.value = Number(input_block.value) + 75
@@ -467,7 +475,7 @@ function fn5(e){
        button_remove5.style.height='20px'
        let empty_button5 = document.createElement('input')
        empty_button5.type='button'
-       empty_button5.style.width='157px'
+       
        empty_button5.style.background='none'
        empty_button5.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -486,6 +494,8 @@ function fn5(e){
            div_window5.style.marginBottom='15px'
            div_window5.style.fontFamily='Roboto'
            div_window5.style.fontSize='14px'
+           div_window5.style.display= 'grid'
+           div_window5.style.gridTemplateColumns = '6.5fr 1fr 1fr'
            inner_block_window5.append(div_window5)
        inner_block5.append(div)
        input_block.value = Number(input_block.value) + 20
@@ -536,7 +546,7 @@ function fn6(e){
        button_remove6.style.height='20px'
        let empty_button6 = document.createElement('input')
        empty_button6.type='button'
-       empty_button6.style.width='107px'
+       
        empty_button6.style.background='none'
        empty_button6.style.border='none'
        
@@ -556,6 +566,8 @@ function fn6(e){
              div_window6.style.marginBottom='15px'
              div_window6.style.fontFamily='Roboto'
              div_window6.style.fontSize='14px'
+             div_window6.style.display= 'grid'
+             div_window6.style.gridTemplateColumns = '6.5fr 1fr 1fr'
              inner_block_window6.append(div_window6)
        inner_block6.append(div)
        input_block.value = Number(input_block.value) + 20
@@ -607,7 +619,7 @@ function fn7(e){
        button_remove7.style.height='20px'
        let empty_button7 = document.createElement('input')
        empty_button7.type='button'
-       empty_button7.style.width='187px'
+   
        empty_button7.style.background='none'
        empty_button7.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -626,6 +638,8 @@ function fn7(e){
          div_window7.style.marginBottom='15px'
          div_window7.style.fontFamily='Roboto'
          div_window7.style.fontSize='14px'
+         div_window7.style.display= 'grid'
+         div_window7.style.gridTemplateColumns = '6.5fr 1fr 1fr'
          inner_block_window7.append(div_window7)
        inner_block7.append(div)
        input_block.value = Number(input_block.value) + 20
@@ -678,7 +692,7 @@ function fn8(e){
        button_remove8.style.height='20px'
        let empty_button8 = document.createElement('input')
        empty_button8.type='button'
-       empty_button8.style.width='151px'
+     
        empty_button8.style.background='none'
        empty_button8.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -697,6 +711,8 @@ function fn8(e){
         div_window8.style.marginBottom='15px'
         div_window8.style.fontFamily='Roboto'
         div_window8.style.fontSize='14px'
+        div_window8.style.display= 'grid'
+      div_window8.style.gridTemplateColumns = '6.5fr 1fr 1fr'
         inner_block_window8.append(div_window8)
        inner_block8.append(div)
        input_block.value = Number(input_block.value) + 20
@@ -749,7 +765,7 @@ function fn9(e){
        button_remove9.style.height='20px'
        let empty_button9 = document.createElement('input')
        empty_button9.type='button'
-       empty_button9.style.width='131px'
+     
        empty_button9.style.background='none'
        empty_button9.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -768,6 +784,8 @@ function fn9(e){
          div_window9.style.marginBottom='15px'
          div_window9.style.fontFamily='Roboto'
          div_window9.style.fontSize='14px'
+         div_window9.style.display= 'grid'
+      div_window9.style.gridTemplateColumns = '6.5fr 1fr 1fr'
          inner_block_window9.append(div_window9)
        inner_block9.append(div)
        input_block.value = Number(input_block.value) + 20 
@@ -820,7 +838,7 @@ function fn10(e){
        button_remove10.style.height='20px'
        let empty_button10 = document.createElement('input')
        empty_button10.type='button'
-       empty_button10.style.width='249px'
+       
        empty_button10.style.background='none'
        empty_button10.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -840,6 +858,8 @@ function fn10(e){
          div_window10.style.marginBottom='15px'
          div_window10.style.fontFamily='Roboto'
          div_window10.style.fontSize='14px'
+         div_window10.style.display= 'grid'
+      div_window10.style.gridTemplateColumns = '6.5fr 1fr 1fr'
          inner_block_window10.append(div_window10)
        inner_block10.append(div)
        input_block.value = Number(input_block.value) + 150
@@ -892,7 +912,7 @@ function fn11(e){
        button_remove11.style.height='20px'
        let empty_button11 = document.createElement('input')
        empty_button11.type='button'
-       empty_button11.style.width='245px'
+      
        empty_button11.style.background='none'
        empty_button11.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -911,6 +931,8 @@ function fn11(e){
        div_window11.style.marginBottom='15px'
        div_window11.style.fontFamily='Roboto'
        div_window11.style.fontSize='14px'
+       div_window11.style.display= 'grid'
+      div_window11.style.gridTemplateColumns = '6.5fr 1fr 1fr'
        inner_block_window11.append(div_window11)
        inner_block11.append(div)
 
@@ -962,7 +984,7 @@ function fn12(e){
           button_remove12.style.height='20px'
        let empty_button12 = document.createElement('input')
        empty_button12.type='button'
-       empty_button12.style.width='255px'
+      
        empty_button12.style.background='none'
        empty_button12.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -981,6 +1003,8 @@ function fn12(e){
        div_window12.style.marginBottom='15px'
        div_window12.style.fontFamily='Roboto'
        div_window12.style.fontSize='14px'
+       div_window12.style.display= 'grid'
+      div_window12.style.gridTemplateColumns = '6.5fr 1fr 1fr'
        inner_block_window12.append(div_window12)
        inner_block12.append(div)
        input_block.value = Number(input_block.value) + 75
@@ -1033,7 +1057,7 @@ function fn13(e){
        button_remove13.style.height='20px'
        let empty_button13 = document.createElement('input')
        empty_button13.type='button'
-       empty_button13.style.width='268px'
+       
        empty_button13.style.background='none'
        empty_button13.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -1053,6 +1077,8 @@ function fn13(e){
         div_window13.style.marginBottom='15px'
         div_window13.style.fontFamily='Roboto'
         div_window13.style.fontSize='14px'
+        div_window13.style.display= 'grid'
+      div_window13.style.gridTemplateColumns = '6.5fr 1fr 1fr'
         inner_block_window13.append(div_window13)
        inner_block13.append(div)
        input_block.value = Number(input_block.value) + 200
@@ -1105,7 +1131,7 @@ function fn14(e){
        button_remove14.style.height='20px'
        let empty_button14 = document.createElement('input')
        empty_button14.type='button'
-       empty_button14.style.width='227px'
+     
        empty_button14.style.background='none'
        empty_button14.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -1124,6 +1150,8 @@ function fn14(e){
         div_window14.style.marginBottom='15px'
         div_window14.style.fontFamily='Roboto'
         div_window14.style.fontSize='14px'
+        div_window14.style.display= 'grid'
+      div_window14.style.gridTemplateColumns = '6.5fr 1fr 1fr'
         inner_block_window14.append(div_window14)
        inner_block14.append(div)
        input_block.value = Number(input_block.value) + 85
@@ -1177,7 +1205,7 @@ function fn15(e){
           button_remove15.style.height='20px'
        let empty_button15 = document.createElement('input')
        empty_button15.type='button'
-       empty_button15.style.width='210px'
+       
        empty_button15.style.background='none'
        empty_button15.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -1196,6 +1224,8 @@ function fn15(e){
        div_window15.style.marginBottom='15px'
        div_window15.style.fontFamily='Roboto'
        div_window15.style.fontSize='14px'
+       div_window15.style.display= 'grid'
+      div_window15.style.gridTemplateColumns = '6.5fr 1fr 1fr'
        inner_block_window15.append(div_window15)
        inner_block15.append(div)
        input_block.value = Number(input_block.value) + 20
@@ -1248,7 +1278,7 @@ function fn16(e){
        button_remove16.style.height='20px'
        let empty_button16 = document.createElement('input')
        empty_button16.type='button'
-       empty_button16.style.width='264px'
+       
        empty_button16.style.background='none'
        empty_button16.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -1268,6 +1298,8 @@ function fn16(e){
        div_window16.style.marginBottom='15px'
        div_window16.style.fontFamily='Roboto'
        div_window16.style.fontSize='14px'
+       div_window16.style.display= 'grid'
+      div_window16.style.gridTemplateColumns = '6.5fr 1fr 1fr'
        inner_block_window16.append(div_window16)
        inner_block16.append(div)
        input_block.value = Number(input_block.value) + 500
@@ -1320,7 +1352,7 @@ function fn17(e){
           button_remove17.style.height='20px'
        let empty_button17 = document.createElement('input')
        empty_button17.type='button'
-       empty_button17.style.width='193px'
+    
        empty_button17.style.background='none'
        empty_button17.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -1339,6 +1371,8 @@ function fn17(e){
         div_window17.style.marginBottom='15px'
         div_window17.style.fontFamily='Roboto'
         div_window17.style.fontSize='14px'
+        div_window17.style.display= 'grid'
+      div_window17.style.gridTemplateColumns = '6.5fr 1fr 1fr'
         inner_block_window17.append(div_window17)
        inner_block17.append(div)
        input_block.value = Number(input_block.value) + 90
@@ -1390,7 +1424,7 @@ function fn18(e){
        button_remove18.style.height='20px'
        let empty_button18 = document.createElement('input')
        empty_button18.type='button'
-       empty_button18.style.width='5px'
+      
        empty_button18.style.background='none'
        empty_button18.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -1409,6 +1443,8 @@ function fn18(e){
         div_window18.style.marginBottom='15px'
         div_window18.style.fontFamily='Roboto'
         div_window18.style.fontSize='14px'
+        div_window18.style.display= 'grid'
+      div_window18.style.gridTemplateColumns = '6.5fr 1fr 1fr'
         inner_block_window18.append(div_window18)
        inner_block18.append(div)
        input_block.value = Number(input_block.value) + 75
@@ -1460,7 +1496,7 @@ function fn19(e){
           button_remove19.style.height='20px'
        let empty_button19 = document.createElement('input')
        empty_button19.type='button'
-       empty_button19.style.width='299px'
+      
        empty_button19.style.background='none'
        empty_button19.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -1480,6 +1516,8 @@ function fn19(e){
        div_window19.style.marginBottom='15px'
        div_window19.style.fontFamily='Roboto'
        div_window19.style.fontSize='14px'
+       div_window19.style.display= 'grid'
+      div_window19.style.gridTemplateColumns = '6.5fr 1fr 1fr'
        inner_block_window19.append(div_window19)
        inner_block19.append(div)
        input_block.value = Number(input_block.value) + 200
@@ -1532,7 +1570,7 @@ function fn20(e){
           button_remove20.style.height='20px'
        let empty_button20 = document.createElement('input')
        empty_button20.type='button'
-       empty_button20.style.width='299px'
+       
        empty_button20.style.background='none'
        empty_button20.style.border='none'
        div.append(`${text.innerHTML}`)
@@ -1552,6 +1590,8 @@ function fn20(e){
        div_window20.style.marginBottom='15px'
        div_window20.style.fontFamily='Roboto'
        div_window20.style.fontSize='14px'
+       div_window20.style.display= 'grid'
+      div_window20.style.gridTemplateColumns = '6.5fr 1fr 1fr'
        inner_block_window20.append(div_window20)
        inner_block20.append(div)
        input_block.value = Number(input_block.value) + 300
