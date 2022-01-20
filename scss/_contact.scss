@@ -144,7 +144,8 @@
   }
   @media (max-width:1081px){
     .footer_block{
-      grid-template-columns: 0.5fr 1fr;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 20px;
     }
     .iframe1{
       display: none;
@@ -164,11 +165,10 @@
       grid-template-columns: 1fr;
       padding-right: 21px;
   }
-  .footer_link_block{
-    margin-top: -50px;
-  }
+ 
 }
-@media (max-width:480px){
+
+@media (max-width:599px){
   .footer_block{
     display: flex;
   }
