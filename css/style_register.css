@@ -165,7 +165,7 @@
   border-top: 1px solid #3e3e3e;
   border-bottom: 1px solid #3e3e3e;
   text-transform: uppercase;
-  font-family: Roboto;
+  font-family: Roboto Condensed;
   font-size: 88px;
   line-height: 86px;
   color: #000;
@@ -461,6 +461,7 @@
   color: rgba(0, 0, 0, 0.87);
   font-weight: bold;
   font-family: Roboto;
+  margin-bottom: 45px;
 }
 
 .txt2 {
@@ -473,8 +474,9 @@
 .add_block, .add_block1, .add_block2, .add_block3, .add_block4, .add_block5, .add_block6, .add_block7, .add_block8, .add_block9, .add_block10, .add_block11, .add_block12, .add_block13, .add_block14, .add_block15, .add_block16, .add_block17, .add_block18, .add_block19, .add_block20, .add_block21 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.1fr 0.3fr 0.5fr 0.6fr;
-      grid-template-columns: 1.1fr 0.3fr 0.5fr 0.6fr;
+  -ms-grid-columns: 1.05fr 0.30fr 0.2fr 0.55fr;
+      grid-template-columns: 1.05fr 0.30fr 0.2fr 0.55fr;
+  grid-column-gap: 55px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -490,7 +492,22 @@
 }
 
 .add_block i {
-  color: #a8ad00;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 10px 10px 10px;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 200;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 10%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#003b5c), to(#00598a));
+  background: linear-gradient(180deg, #003b5c 0%, #00598a 100%);
+  border-bottom: 0px solid #eee;
+  cursor: pointer;
+  text-align: center;
   font-size: 17px;
 }
 
@@ -500,7 +517,22 @@
 }
 
 .add_block1 i, .add_block2 i, .add_block3 i, .add_block4 i, .add_block5 i, .add_block6 i, .add_block7 i, .add_block8 i, .add_block9 i, .add_block10 i, .add_block11 i, .add_block12 i, .add_block13 i, .add_block14 i, .add_block15 i, .add_block16 i, .add_block17 i, .add_block18 i, .add_block19 i, .add_block20 i, .add_block21 i {
-  color: #a8ad00;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 10px 10px 10px;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 200;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 10%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background: -webkit-gradient(linear, left top, left bottom, from(#003b5c), to(#00598a));
+  background: linear-gradient(180deg, #003b5c 0%, #00598a 100%);
+  border-bottom: 0px solid #eee;
+  cursor: pointer;
+  text-align: center;
   font-size: 17px;
 }
 
@@ -528,6 +560,7 @@
   background: linear-gradient(180deg, #003b5c 0%, #00598a 100%);
   border-bottom: 0px solid #eee;
   cursor: pointer;
+  text-align: center;
 }
 
 .btn_inside:hover {
@@ -570,12 +603,15 @@
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 300px;
-  background-color: black;
-  color: #fff;
+  color: #333;
+  background: #fff;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
   text-align: center;
   border-radius: 6px;
   padding: 10px;
   position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   z-index: 1;
   font-size: 14px;
   bottom: 145%;
@@ -641,6 +677,10 @@
   margin-right: -5px;
   padding: 20px;
   font-size: 20px;
+}
+
+.fa-info-circle:before {
+  content: "";
 }
 
 .txtbr {
@@ -793,6 +833,7 @@
   width: 35px;
   font-size: 14px;
   color: #000;
+  font-family: Roboto;
 }
 
 .modal {
@@ -824,7 +865,7 @@
   margin: auto;
   padding: 50px;
   border: 1px solid #888;
-  width: 50%;
+  width: 34.5%;
 }
 
 /* Кнопка закрытия */
@@ -919,6 +960,11 @@
   .tooltip .tooltiptext {
     width: 100px;
   }
+}
+
+.info {
+  font-family: Roboto;
+  font-size: 14px;
 }
 
 * {
